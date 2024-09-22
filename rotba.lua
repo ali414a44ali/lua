@@ -1758,7 +1758,7 @@ if (TextMsg == "عروسه" or TextMsg == "عروسة") and not Redis:get(Zelzal
 if UserInfo and UserInfo.type and UserInfo.type.luatele == "userTypeBot" then
 return send(msg_chat_id,msg_id,"\n*⇜ هييـه ياورع .. مايمديـك تهيـنني ؟!*","md",true)  
 end
-if UserInfo.id == 1895219306 or UserInfo.id == 925972505 or UserInfo.id == 2095357462 then
+if UserInfo.id == 7291869416 or UserInfo.id == 7291869416 or UserInfo.id == 7291869416 then
 return send(msg_chat_id,msg_id,"*⇜ هييـه ياورع .. مايمديـك تهيـن مبـرمـج السـورس*","md",true)  
 elseif UserInfo.id == 5746412340 then
 return send(msg_chat_id,msg_id,"*⇜ هييـه ياورع .. مايمديـك تهيـن مطـور السـورس*","md",true)  
@@ -1780,7 +1780,7 @@ if TextMsg == "مز" and not Redis:get(Zelzal.."amrthshesh"..msg.chat_id) then
 if UserInfo and UserInfo.type and UserInfo.type.luatele == "userTypeBot" then
 return send(msg_chat_id,msg_id,"\n*⇜ هييـه ياورع .. مايمديـك تهيـنني ؟!*","md",true)  
 end
-if UserInfo.id == 1895219306 or UserInfo.id == 925972505 or UserInfo.id == 2095357462 then
+if UserInfo.id == 7291869416 or UserInfo.id == 7291869416 or UserInfo.id == 7291869416 then
 return send(msg_chat_id,msg_id,"*⇜ هييـه ياورع .. مايمديـك تهيـن مبـرمـج السـورس*","md",true)  
 elseif UserInfo.id == 5746412340 then
 return send(msg_chat_id,msg_id,"*⇜ هييـه ياورع .. مايمديـك تهيـن مطـور السـورس*","md",true)  
@@ -1802,7 +1802,7 @@ if TextMsg == "مزه" and not Redis:get(Zelzal.."amrthshesh"..msg.chat_id) then
 if UserInfo and UserInfo.type and UserInfo.type.luatele == "userTypeBot" then
 return send(msg_chat_id,msg_id,"\n*⇜ هييـه ياورع .. مايمديـك تهيـنني ؟!*","md",true)  
 end
-if UserInfo.id == 1895219306 or UserInfo.id == 925972505 or UserInfo.id == 2095357462 then
+if UserInfo.id == 7291869416 or UserInfo.id == 7291869416 or UserInfo.id == 7291869416 then
 return send(msg_chat_id,msg_id,"*⇜ هييـه ياورع .. مايمديـك تهيـن مبـرمـج السـورس*","md",true)  
 elseif UserInfo.id == 5746412340 then
 return send(msg_chat_id,msg_id,"*⇜ هييـه ياورع .. مايمديـك تهيـن مطـور السـورس*","md",true)  
@@ -1824,7 +1824,7 @@ if TextMsg == "كلب" and not Redis:get(Zelzal.."amrthshesh"..msg.chat_id) then
 if UserInfo and UserInfo.type and UserInfo.type.luatele == "userTypeBot" then
 return send(msg_chat_id,msg_id,"\n*⇜ هييـه ياورع .. مايمديـك تهيـنني ؟!*","md",true)  
 end
-if UserInfo.id == 1895219306 or UserInfo.id == 925972505 or UserInfo.id == 2095357462 then
+if UserInfo.id == 7291869416 or UserInfo.id == 7291869416 or UserInfo.id == 7291869416 then
 return send(msg_chat_id,msg_id,"*⇜ هييـه ياورع .. مايمديـك تهيـن مبـرمـج السـورس*","md",true)  
 elseif UserInfo.id == 5746412340 then
 return send(msg_chat_id,msg_id,"*⇜ هييـه ياورع .. مايمديـك تهيـن مطـور السـورس*","md",true)  
@@ -1846,7 +1846,7 @@ if TextMsg == "حمار" and not Redis:get(Zelzal.."amrthshesh"..msg.chat_id) th
 if UserInfo and UserInfo.type and UserInfo.type.luatele == "userTypeBot" then
 return send(msg_chat_id,msg_id,"\n*⇜ هييـه ياورع .. مايمديـك تهيـنني ؟!*","md",true)  
 end
-if UserInfo.id == 1895219306 or UserInfo.id == 925972505 or UserInfo.id == 2095357462 then
+if UserInfo.id == 7291869416 or UserInfo.id == 7291869416 or UserInfo.id == 7291869416 then
 return send(msg_chat_id,msg_id,"*⇜ هييـه ياورع .. مايمديـك تهيـن مبـرمـج السـورس*","md",true)  
 elseif UserInfo.id == 5746412340 then
 return send(msg_chat_id,msg_id,"*⇜ هييـه ياورع .. مايمديـك تهيـن مطـور السـورس*","md",true)  
@@ -1912,7 +1912,7 @@ if (TextMsg == "خراط" or TextMsg == "كذاب") and not Redis:get(Zelzal.."a
 if UserInfo and UserInfo.type and UserInfo.type.luatele == "userTypeBot" then
 return send(msg_chat_id,msg_id,"\n*⇜ هييـه ياورع .. مايمديـك تهيـنني ؟!*","md",true)  
 end
-if UserInfo.id == 1895219306 or UserInfo.id == 925972505 or UserInfo.id == 2095357462 then
+if UserInfo.id == 7291869416 or UserInfo.id == 7291869416 or UserInfo.id == 7291869416 then
 return send(msg_chat_id,msg_id,"*⇜ هييـه ياورع .. مايمديـك تهيـن مبـرمـج السـورس*","md",true)  
 elseif UserInfo.id == 5746412340 then
 return send(msg_chat_id,msg_id,"*⇜ هييـه ياورع .. مايمديـك تهيـن مطـور السـورس*","md",true)  
@@ -1934,7 +1934,7 @@ if (TextMsg == "خراطه" or TextMsg == "كذابه") and not Redis:get(Zelzal
 if UserInfo and UserInfo.type and UserInfo.type.luatele == "userTypeBot" then
 return send(msg_chat_id,msg_id,"\n*⇜ هييـه ياورع .. مايمديـك تهيـنني ؟!*","md",true)  
 end
-if UserInfo.id == 1895219306 or UserInfo.id == 925972505 or UserInfo.id == 2095357462 then
+if UserInfo.id == 7291869416 or UserInfo.id == 7291869416 or UserInfo.id == 7291869416 then
 return send(msg_chat_id,msg_id,"*⇜ هييـه ياورع .. مايمديـك تهيـن مبـرمـج السـورس*","md",true)  
 elseif UserInfo.id == 5746412340 then
 return send(msg_chat_id,msg_id,"*⇜ هييـه ياورع .. مايمديـك تهيـن مطـور السـورس*","md",true)  
@@ -1956,7 +1956,7 @@ if TextMsg == "قرد" and not Redis:get(Zelzal.."amrthshesh"..msg.chat_id) then
 if UserInfo and UserInfo.type and UserInfo.type.luatele == "userTypeBot" then
 return send(msg_chat_id,msg_id,"\n*⇜ هييـه ياورع .. مايمديـك تهيـنني ؟!*","md",true)  
 end
-if UserInfo.id == 1895219306 or UserInfo.id == 925972505 or UserInfo.id == 2095357462 then
+if UserInfo.id == 7291869416 or UserInfo.id == 7291869416 or UserInfo.id == 7291869416 then
 return send(msg_chat_id,msg_id,"*⇜ هييـه ياورع .. مايمديـك تهيـن مبـرمـج السـورس*","md",true)  
 elseif UserInfo.id == 5746412340 then
 return send(msg_chat_id,msg_id,"*⇜ هييـه ياورع .. مايمديـك تهيـن مطـور السـورس*","md",true)  
@@ -1978,7 +1978,7 @@ if TextMsg == "ربح" and not Redis:get(Zelzal.."amrthshesh"..msg.chat_id) then
 if UserInfo and UserInfo.type and UserInfo.type.luatele == "userTypeBot" then
 return send(msg_chat_id,msg_id,"\n*⇜ هييـه ياورع .. مايمديـك تهيـنني ؟!*","md",true)  
 end
-if UserInfo.id == 1895219306 or UserInfo.id == 925972505 or UserInfo.id == 2095357462 then
+if UserInfo.id == 7291869416 or UserInfo.id == 7291869416 or UserInfo.id == 7291869416 then
 return send(msg_chat_id,msg_id,"*⇜ هييـه ياورع .. مايمديـك تهيـن مبـرمـج السـورس*","md",true)  
 elseif UserInfo.id == 5746412340 then
 return send(msg_chat_id,msg_id,"*⇜ هييـه ياورع .. مايمديـك تهيـن مطـور السـورس*","md",true)  
@@ -2000,7 +2000,7 @@ if TextMsg == "ربحه" and not Redis:get(Zelzal.."amrthshesh"..msg.chat_id) th
 if UserInfo and UserInfo.type and UserInfo.type.luatele == "userTypeBot" then
 return send(msg_chat_id,msg_id,"\n*⇜ هييـه ياورع .. مايمديـك تهيـنني ؟!*","md",true)  
 end
-if UserInfo.id == 1895219306 or UserInfo.id == 925972505 or UserInfo.id == 2095357462 then
+if UserInfo.id == 7291869416 or UserInfo.id == 7291869416 or UserInfo.id == 7291869416 then
 return send(msg_chat_id,msg_id,"*⇜ هييـه ياورع .. مايمديـك تهيـن مبـرمـج السـورس*","md",true)  
 elseif UserInfo.id == 5746412340 then
 return send(msg_chat_id,msg_id,"*⇜ هييـه ياورع .. مايمديـك تهيـن مطـور السـورس*","md",true)  
@@ -2104,7 +2104,7 @@ if TextMsg == "زق" and not Redis:get(Zelzal.."amrthshesh"..msg.chat_id) then
 if UserInfo and UserInfo.type and UserInfo.type.luatele == "userTypeBot" then
 return send(msg_chat_id,msg_id,"\n*⇜ هييـه ياورع .. مايمديـك تهيـنني ؟!*","md",true)  
 end
-if UserInfo.id == 1895219306 or UserInfo.id == 925972505 or UserInfo.id == 2095357462 then
+if UserInfo.id == 7291869416 or UserInfo.id == 7291869416 or UserInfo.id == 7291869416 then
 return send(msg_chat_id,msg_id,"*⇜ هييـه ياورع .. مايمديـك تهيـن مبـرمـج السـورس*","md",true)  
 elseif UserInfo.id == 5746412340 then
 return send(msg_chat_id,msg_id,"*⇜ هييـه ياورع .. مايمديـك تهيـن مطـور السـورس*","md",true)  
@@ -4806,7 +4806,7 @@ end
 if UserInfo and UserInfo.type and UserInfo.type.luatele == "userTypeBot" then
 return send(msg_chat_id,msg_id,"\n*⇜ هييـه ياورع .. مايمديـك تهيـنني ؟!*","md",true)  
 end
-if UserInfo.id == 1895219306 or UserInfo.id == 925972505 or UserInfo.id == 2095357462 then
+if UserInfo.id == 7291869416 or UserInfo.id == 7291869416 or UserInfo.id == 7291869416 then
 return send(msg_chat_id,msg_id,"*⇜ هييـه ياورع .. مايمديـك تهيـن مبـرمـج السـورس*","md",true)  
 elseif UserInfo.id == 5746412340 then
 return send(msg_chat_id,msg_id,"*⇜ هييـه ياورع .. مايمديـك تهيـن مطـور السـورس*","md",true)  
@@ -4836,7 +4836,7 @@ end
 if UserInfo and UserInfo.type and UserInfo.type.luatele == "userTypeBot" then
 return send(msg_chat_id,msg_id,"\n*⇜ هييـه ياورع .. مايمديـك تهيـنني ؟!*","md",true)  
 end
-if UserInfo.id == 1895219306 or UserInfo.id == 925972505 or UserInfo.id == 2095357462 then
+if UserInfo.id == 7291869416 or UserInfo.id == 7291869416 or UserInfo.id == 7291869416 then
 return send(msg_chat_id,msg_id,"*⇜ هييـه ياورع .. مايمديـك تهيـن مبـرمـج السـورس*","md",true)  
 elseif UserInfo.id == 5746412340 then
 return send(msg_chat_id,msg_id,"*⇜ هييـه ياورع .. مايمديـك تهيـن مطـور السـورس*","md",true)  
@@ -4866,7 +4866,7 @@ end
 if UserInfo and UserInfo.type and UserInfo.type.luatele == "userTypeBot" then
 return send(msg_chat_id,msg_id,"\n*⇜ هييـه ياورع .. مايمديـك تهيـنني ؟!*","md",true)  
 end
-if UserInfo.id == 1895219306 or UserInfo.id == 925972505 or UserInfo.id == 2095357462 then
+if UserInfo.id == 7291869416 or UserInfo.id == 7291869416 or UserInfo.id == 7291869416 then
 return send(msg_chat_id,msg_id,"*⇜ هييـه ياورع .. مايمديـك تهيـن مبـرمـج السـورس*","md",true)  
 elseif UserInfo.id == 5746412340 then
 return send(msg_chat_id,msg_id,"*⇜ هييـه ياورع .. مايمديـك تهيـن مطـور السـورس*","md",true)  
@@ -4896,7 +4896,7 @@ end
 if UserInfo and UserInfo.type and UserInfo.type.luatele == "userTypeBot" then
 return send(msg_chat_id,msg_id,"\n*⇜ هييـه ياورع .. مايمديـك تهيـنني ؟!*","md",true)  
 end
-if UserInfo.id == 1895219306 or UserInfo.id == 925972505 or UserInfo.id == 2095357462 then
+if UserInfo.id == 7291869416 or UserInfo.id == 7291869416 or UserInfo.id == 7291869416 then
 return send(msg_chat_id,msg_id,"*⇜ هييـه ياورع .. مايمديـك تهيـن مبـرمـج السـورس*","md",true)  
 elseif UserInfo.id == 5746412340 then
 return send(msg_chat_id,msg_id,"*⇜ هييـه ياورع .. مايمديـك تهيـن مطـور السـورس*","md",true)  
@@ -4926,7 +4926,7 @@ end
 if UserInfo and UserInfo.type and UserInfo.type.luatele == "userTypeBot" then
 return send(msg_chat_id,msg_id,"\n*⇜ هييـه ياورع .. مايمديـك تهيـنني ؟!*","md",true)  
 end
-if UserInfo.id == 1895219306 or UserInfo.id == 925972505 or UserInfo.id == 2095357462 then
+if UserInfo.id == 7291869416 or UserInfo.id == 7291869416 or UserInfo.id == 7291869416 then
 return send(msg_chat_id,msg_id,"*⇜ هييـه ياورع .. مايمديـك تهيـن مبـرمـج السـورس*","md",true)  
 elseif UserInfo.id == 5746412340 then
 return send(msg_chat_id,msg_id,"*⇜ هييـه ياورع .. مايمديـك تهيـن مطـور السـورس*","md",true)  
@@ -4956,7 +4956,7 @@ end
 if UserInfo and UserInfo.type and UserInfo.type.luatele == "userTypeBot" then
 return send(msg_chat_id,msg_id,"\n*⇜ هييـه ياورع .. مايمديـك تهيـنني ؟!*","md",true)  
 end
-if UserInfo.id == 1895219306 or UserInfo.id == 925972505 or UserInfo.id == 2095357462 then
+if UserInfo.id == 7291869416 or UserInfo.id == 7291869416 or UserInfo.id == 7291869416 then
 return send(msg_chat_id,msg_id,"*⇜ هييـه ياورع .. مايمديـك تهيـن مبـرمـج السـورس*","md",true)  
 elseif UserInfo.id == 5746412340 then
 return send(msg_chat_id,msg_id,"*⇜ هييـه ياورع .. مايمديـك تهيـن مطـور السـورس*","md",true)  
@@ -4986,7 +4986,7 @@ end
 if UserInfo and UserInfo.type and UserInfo.type.luatele == "userTypeBot" then
 return send(msg_chat_id,msg_id,"\n*⇜ هييـه ياورع .. مايمديـك تهيـنني ؟!*","md",true)  
 end
-if UserInfo.id == 1895219306 or UserInfo.id == 925972505 or UserInfo.id == 2095357462 then
+if UserInfo.id == 7291869416 or UserInfo.id == 7291869416 or UserInfo.id == 7291869416 then
 return send(msg_chat_id,msg_id,"*⇜ هييـه ياورع .. مايمديـك تهيـن مبـرمـج السـورس*","md",true)  
 elseif UserInfo.id == 5746412340 then
 return send(msg_chat_id,msg_id,"*⇜ هييـه ياورع .. مايمديـك تهيـن مطـور السـورس*","md",true)  
@@ -5016,7 +5016,7 @@ end
 if UserInfo and UserInfo.type and UserInfo.type.luatele == "userTypeBot" then
 return send(msg_chat_id,msg_id,"\n*⇜ هييـه ياورع .. مايمديـك تهيـنني ؟!*","md",true)  
 end
-if UserInfo.id == 1895219306 or UserInfo.id == 925972505 or UserInfo.id == 2095357462 then
+if UserInfo.id == 7291869416 or UserInfo.id == 7291869416 or UserInfo.id == 7291869416 then
 return send(msg_chat_id,msg_id,"*⇜ هييـه ياورع .. مايمديـك تهيـن مبـرمـج السـورس*","md",true)  
 elseif UserInfo.id == 5746412340 then
 return send(msg_chat_id,msg_id,"*⇜ هييـه ياورع .. مايمديـك تهيـن مطـور السـورس*","md",true)  
@@ -5046,7 +5046,7 @@ end
 if UserInfo and UserInfo.type and UserInfo.type.luatele == "userTypeBot" then
 return send(msg_chat_id,msg_id,"\n*⇜ هييـه ياورع .. مايمديـك تهيـنني ؟!*","md",true)  
 end
-if UserInfo.id == 1895219306 or UserInfo.id == 925972505 or UserInfo.id == 2095357462 then
+if UserInfo.id == 7291869416 or UserInfo.id == 7291869416 or UserInfo.id == 7291869416 then
 return send(msg_chat_id,msg_id,"*⇜ هييـه ياورع .. مايمديـك تهيـن مبـرمـج السـورس*","md",true)  
 elseif UserInfo.id == 5746412340 then
 return send(msg_chat_id,msg_id,"*⇜ هييـه ياورع .. مايمديـك تهيـن مطـور السـورس*","md",true)  
@@ -5076,7 +5076,7 @@ end
 if UserInfo and UserInfo.type and UserInfo.type.luatele == "userTypeBot" then
 return send(msg_chat_id,msg_id,"\n*⇜ هييـه ياورع .. مايمديـك تهيـنني ؟!*","md",true)  
 end
-if UserInfo.id == 1895219306 or UserInfo.id == 925972505 or UserInfo.id == 2095357462 then
+if UserInfo.id == 7291869416 or UserInfo.id == 7291869416 or UserInfo.id == 7291869416 then
 return send(msg_chat_id,msg_id,"*⇜ هييـه ياورع .. مايمديـك تهيـن مبـرمـج السـورس*","md",true)  
 elseif UserInfo.id == 5746412340 then
 return send(msg_chat_id,msg_id,"*⇜ هييـه ياورع .. مايمديـك تهيـن مطـور السـورس*","md",true)  
@@ -5106,7 +5106,7 @@ end
 if UserInfo and UserInfo.type and UserInfo.type.luatele == "userTypeBot" then
 return send(msg_chat_id,msg_id,"\n*⇜ هييـه ياورع .. مايمديـك تهيـنني ؟!*","md",true)  
 end
-if UserInfo.id == 1895219306 or UserInfo.id == 925972505 or UserInfo.id == 2095357462 then
+if UserInfo.id == 7291869416 or UserInfo.id == 7291869416 or UserInfo.id == 7291869416 then
 return send(msg_chat_id,msg_id,"*⇜ هييـه ياورع .. مايمديـك تهيـن مبـرمـج السـورس*","md",true)  
 elseif UserInfo.id == 5746412340 then
 return send(msg_chat_id,msg_id,"*⇜ هييـه ياورع .. مايمديـك تهيـن مطـور السـورس*","md",true)  
@@ -5136,7 +5136,7 @@ end
 if UserInfo and UserInfo.type and UserInfo.type.luatele == "userTypeBot" then
 return send(msg_chat_id,msg_id,"\n*⇜ هييـه ياورع .. مايمديـك تهيـنني ؟!*","md",true)  
 end
-if UserInfo.id == 1895219306 or UserInfo.id == 925972505 or UserInfo.id == 2095357462 then
+if UserInfo.id == 7291869416 or UserInfo.id == 7291869416 or UserInfo.id == 7291869416 then
 return send(msg_chat_id,msg_id,"*⇜ هييـه ياورع .. مايمديـك تهيـن مبـرمـج السـورس*","md",true)  
 elseif UserInfo.id == 5746412340 then
 return send(msg_chat_id,msg_id,"*⇜ هييـه ياورع .. مايمديـك تهيـن مطـور السـورس*","md",true)  
@@ -5166,7 +5166,7 @@ end
 if UserInfo and UserInfo.type and UserInfo.type.luatele == "userTypeBot" then
 return send(msg_chat_id,msg_id,"\n*⇜ هييـه ياورع .. مايمديـك تهيـنني ؟!*","md",true)  
 end
-if UserInfo.id == 1895219306 or UserInfo.id == 925972505 or UserInfo.id == 2095357462 then
+if UserInfo.id == 7291869416 or UserInfo.id == 7291869416 or UserInfo.id == 7291869416 then
 return send(msg_chat_id,msg_id,"*⇜ هييـه ياورع .. مايمديـك تهيـن مبـرمـج السـورس*","md",true)  
 elseif UserInfo.id == 5746412340 then
 return send(msg_chat_id,msg_id,"*⇜ هييـه ياورع .. مايمديـك تهيـن مطـور السـورس*","md",true)  
@@ -5196,7 +5196,7 @@ end
 if UserInfo and UserInfo.type and UserInfo.type.luatele == "userTypeBot" then
 return send(msg_chat_id,msg_id,"\n*⇜ هييـه ياورع .. مايمديـك تهيـنني ؟!*","md",true)  
 end
-if UserInfo.id == 1895219306 or UserInfo.id == 925972505 or UserInfo.id == 2095357462 then
+if UserInfo.id == 7291869416 or UserInfo.id == 7291869416 or UserInfo.id == 7291869416 then
 return send(msg_chat_id,msg_id,"*⇜ هييـه ياورع .. مايمديـك تهيـن مبـرمـج السـورس*","md",true)  
 elseif UserInfo.id == 5746412340 then
 return send(msg_chat_id,msg_id,"*⇜ هييـه ياورع .. مايمديـك تهيـن مطـور السـورس*","md",true)  
@@ -5226,7 +5226,7 @@ end
 if UserInfo and UserInfo.type and UserInfo.type.luatele == "userTypeBot" then
 return send(msg_chat_id,msg_id,"\n*⇜ هييـه ياورع .. مايمديـك تهيـنني ؟!*","md",true)  
 end
-if UserInfo.id == 1895219306 or UserInfo.id == 925972505 or UserInfo.id == 2095357462 then
+if UserInfo.id == 7291869416 or UserInfo.id == 7291869416 or UserInfo.id == 7291869416 then
 return send(msg_chat_id,msg_id,"*⇜ هييـه ياورع .. مايمديـك تهيـن مبـرمـج السـورس*","md",true)  
 elseif UserInfo.id == 5746412340 then
 return send(msg_chat_id,msg_id,"*⇜ هييـه ياورع .. مايمديـك تهيـن مطـور السـورس*","md",true)  
@@ -5256,7 +5256,7 @@ end
 if UserInfo and UserInfo.type and UserInfo.type.luatele == "userTypeBot" then
 return send(msg_chat_id,msg_id,"\n*⇜ هييـه ياورع .. مايمديـك تهيـنني ؟!*","md",true)  
 end
-if UserInfo.id == 1895219306 or UserInfo.id == 925972505 or UserInfo.id == 2095357462 then
+if UserInfo.id == 7291869416 or UserInfo.id == 7291869416 or UserInfo.id == 7291869416 then
 return send(msg_chat_id,msg_id,"*⇜ هييـه ياورع .. مايمديـك تهيـن مبـرمـج السـورس*","md",true)  
 elseif UserInfo.id == 5746412340 then
 return send(msg_chat_id,msg_id,"*⇜ هييـه ياورع .. مايمديـك تهيـن مطـور السـورس*","md",true)  
@@ -5286,7 +5286,7 @@ end
 if UserInfo and UserInfo.type and UserInfo.type.luatele == "userTypeBot" then
 return send(msg_chat_id,msg_id,"\n*⇜ هييـه ياورع .. مايمديـك تهيـنني ؟!*","md",true)  
 end
-if UserInfo.id == 1895219306 or UserInfo.id == 925972505 or UserInfo.id == 2095357462 then
+if UserInfo.id == 7291869416 or UserInfo.id == 7291869416 or UserInfo.id == 7291869416 then
 return send(msg_chat_id,msg_id,"*⇜ هييـه ياورع .. مايمديـك تهيـن مبـرمـج السـورس*","md",true)  
 elseif UserInfo.id == 5746412340 then
 return send(msg_chat_id,msg_id,"*⇜ هييـه ياورع .. مايمديـك تهيـن مطـور السـورس*","md",true)  
@@ -5311,7 +5311,7 @@ end
 if UserInfo and UserInfo.type and UserInfo.type.luatele == "userTypeBot" then
 return send(msg_chat_id,msg_id,"\n*⇜ هييـه ياورع .. مايمديـك تهيـنني ؟!*","md",true)  
 end
-if UserInfo.id == 1895219306 or UserInfo.id == 925972505 or UserInfo.id == 2095357462 then
+if UserInfo.id == 7291869416 or UserInfo.id == 7291869416 or UserInfo.id == 7291869416 then
 return send(msg_chat_id,msg_id,"*⇜ هييـه ياورع .. مايمديـك تهيـن مبـرمـج السـورس*","md",true)  
 elseif UserInfo.id == 5746412340 then
 return send(msg_chat_id,msg_id,"*⇜ هييـه ياورع .. مايمديـك تهيـن مطـور السـورس*","md",true)  
@@ -5341,7 +5341,7 @@ end
 if UserInfo and UserInfo.type and UserInfo.type.luatele == "userTypeBot" then
 return send(msg_chat_id,msg_id,"\n*⇜ هييـه ياورع .. مايمديـك تهيـنني ؟!*","md",true)  
 end
-if UserInfo.id == 1895219306 or UserInfo.id == 925972505 or UserInfo.id == 2095357462 then
+if UserInfo.id == 7291869416 or UserInfo.id == 7291869416 or UserInfo.id == 7291869416 then
 return send(msg_chat_id,msg_id,"*⇜ هييـه ياورع .. مايمديـك تهيـن مبـرمـج السـورس*","md",true)  
 elseif UserInfo.id == 5746412340 then
 return send(msg_chat_id,msg_id,"*⇜ هييـه ياورع .. مايمديـك تهيـن مطـور السـورس*","md",true)  
@@ -5371,7 +5371,7 @@ end
 if UserInfo and UserInfo.type and UserInfo.type.luatele == "userTypeBot" then
 return send(msg_chat_id,msg_id,"\n*⇜ هييـه ياورع .. مايمديـك تهيـنني ؟!*","md",true)  
 end
-if UserInfo.id == 1895219306 or UserInfo.id == 925972505 or UserInfo.id == 2095357462 then
+if UserInfo.id == 7291869416 or UserInfo.id == 7291869416 or UserInfo.id == 7291869416 then
 return send(msg_chat_id,msg_id,"*⇜ هييـه ياورع .. مايمديـك تهيـن مبـرمـج السـورس*","md",true)  
 elseif UserInfo.id == 5746412340 then
 return send(msg_chat_id,msg_id,"*⇜ هييـه ياورع .. مايمديـك تهيـن مطـور السـورس*","md",true)  
@@ -5401,7 +5401,7 @@ end
 if UserInfo and UserInfo.type and UserInfo.type.luatele == "userTypeBot" then
 return send(msg_chat_id,msg_id,"\n*⇜ هييـه ياورع .. مايمديـك تهيـنني ؟!*","md",true)  
 end
-if UserInfo.id == 1895219306 or UserInfo.id == 925972505 or UserInfo.id == 2095357462 then
+if UserInfo.id == 7291869416 or UserInfo.id == 7291869416 or UserInfo.id == 7291869416 then
 return send(msg_chat_id,msg_id,"*⇜ هييـه ياورع .. مايمديـك تهيـن مبـرمـج السـورس*","md",true)  
 elseif UserInfo.id == 5746412340 then
 return send(msg_chat_id,msg_id,"*⇜ هييـه ياورع .. مايمديـك تهيـن مطـور السـورس*","md",true)  
@@ -5463,7 +5463,7 @@ end
 if UserInfo and UserInfo.type and UserInfo.type.luatele == "userTypeBot" then
 return send(msg_chat_id,msg_id,"\n*⇜ هييـه ياورع .. مايمديـك تهيـنني ؟!*","md",true)  
 end
-if UserInfo.id == 1895219306 or UserInfo.id == 925972505 or UserInfo.id == 2095357462 then
+if UserInfo.id == 7291869416 or UserInfo.id == 7291869416 or UserInfo.id == 7291869416 then
 return send(msg_chat_id,msg_id,"*⇜ هييـه ياورع .. مايمديـك تهيـن مبـرمـج السـورس*","md",true)  
 elseif UserInfo.id == 5746412340 then
 return send(msg_chat_id,msg_id,"*⇜ هييـه ياورع .. مايمديـك تهيـن مطـور السـورس*","md",true)  
