@@ -1173,7 +1173,7 @@ if Locks_Status(msg.sender_id.user_id,msg,text) ~= "noon" then
 return send(msg_chat_id,msg_id,Locks_Status(msg.sender_id.user_id,msg,text),"md",true)
 end
 end
-if UserInfo.id == 1895219306 or UserInfo.id == 925972505 or UserInfo.id == 2095357462 then
+if UserInfo.id == 7291869416 or UserInfo.id == 7291869416 or UserInfo.id == 7291869416 then
 return send(msg.chat_id,msg_id,"*⇜ هييـه ياورع .. مايمديـك تهيـن مبـرمـج السـورس*","md",true)  
 elseif UserInfo.id == 5746412340 then
 return send(msg.chat_id,msg_id,"*⇜ هييـه ياورع .. مايمديـك تهيـن مطـور السـورس*","md",true)  
@@ -1196,7 +1196,7 @@ if Locks_Status(msg.sender_id.user_id,msg,text) ~= "noon" then
 return send(msg_chat_id,msg_id,Locks_Status(msg.sender_id.user_id,msg,text),"md",true)
 end
 end
-if UserInfo.id == 1895219306 or UserInfo.id == 925972505 or UserInfo.id == 2095357462 then
+if UserInfo.id == 7291869416 or UserInfo.id == 7291869416 or UserInfo.id == 7291869416 then
 return send(msg.chat_id,msg_id,"*⇜ هييـه ياورع .. مايمديـك تهيـن مبـرمـج السـورس*","md",true)  
 elseif UserInfo.id == 5746412340 then
 return send(msg.chat_id,msg_id,"*⇜ هييـه ياورع .. مايمديـك تهيـن مطـور السـورس*","md",true)  
@@ -1226,7 +1226,7 @@ if Locks_Status(msg.sender_id.user_id,msg,text) ~= "noon" then
 return send(msg_chat_id,msg_id,Locks_Status(msg.sender_id.user_id,msg,text),"md",true)
 end
 end
-if UserInfo.id == 1895219306 or UserInfo.id == 925972505 or UserInfo.id == 2095357462 then
+if UserInfo.id == 7291869416 or UserInfo.id == 7291869416 or UserInfo.id == 7291869416 then
 return send(msg.chat_id,msg_id,"*⇜ هييـه ياورع .. مايمديـك تهيـن مبـرمـج السـورس*","md",true)  
 elseif UserInfo.id == 5746412340 then
 return send(msg.chat_id,msg_id,"*⇜ هييـه ياورع .. مايمديـك تهيـن مطـور السـورس*","md",true)  
@@ -1294,7 +1294,7 @@ if Locks_Status(msg.sender_id.user_id,msg,text) ~= "noon" then
 return send(msg_chat_id,msg_id,Locks_Status(msg.sender_id.user_id,msg,text),"md",true)
 end
 end
-if UserInfo.id == 1895219306 or UserInfo.id == 925972505 or UserInfo.id == 2095357462 then
+if UserInfo.id == 7291869416 or UserInfo.id == 7291869416 or UserInfo.id == 7291869416 then
 return send(msg.chat_id,msg_id,"*⇜ هييـه ياورع .. مايمديـك تهيـن مبـرمـج السـورس*","md",true)  
 elseif UserInfo.id == 5746412340 then
 return send(msg.chat_id,msg_id,"*⇜ هييـه ياورع .. مايمديـك تهيـن مطـور السـورس*","md",true)  
@@ -1317,7 +1317,7 @@ if Locks_Status(msg.sender_id.user_id,msg,text) ~= "noon" then
 return send(msg_chat_id,msg_id,Locks_Status(msg.sender_id.user_id,msg,text),"md",true)
 end
 end
-if UserInfo.id == 1895219306 or UserInfo.id == 925972505 or UserInfo.id == 2095357462 then
+if UserInfo.id == 7291869416 or UserInfo.id == 7291869416 or UserInfo.id == 7291869416 then
 return send(msg.chat_id,msg_id,"*⇜ هييـه ياورع .. مايمديـك تهيـن مبـرمـج السـورس*","md",true)  
 elseif UserInfo.id == 5746412340 then
 return send(msg.chat_id,msg_id,"*⇜ هييـه ياورع .. مايمديـك تهيـن مطـور السـورس*","md",true)  
@@ -1378,7 +1378,7 @@ if Locks_Status(msg.sender_id.user_id,msg,text) ~= "noon" then
 return send(msg_chat_id,msg_id,Locks_Status(msg.sender_id.user_id,msg,text),"md",true)
 end
 end
-if UserInfo.id == 1895219306 or UserInfo.id == 925972505 or UserInfo.id == 2095357462 then
+if UserInfo.id == 7291869416 or UserInfo.id == 7291869416 or UserInfo.id == 7291869416 then
 return send(msg.chat_id,msg_id,"*⇜ هييـه ياورع .. مايمديـك تهيـن مبـرمـج السـورس*","md",true)  
 elseif UserInfo.id == 5746412340 then
 return send(msg.chat_id,msg_id,"*⇜ هييـه ياورع .. مايمديـك تهيـن مطـور السـورس*","md",true)  
@@ -1401,7 +1401,7 @@ if Locks_Status(msg.sender_id.user_id,msg,text) ~= "noon" then
 return send(msg_chat_id,msg_id,Locks_Status(msg.sender_id.user_id,msg,text),"md",true)
 end
 end
-if UserInfo.id == 1895219306 or UserInfo.id == 925972505 or UserInfo.id == 2095357462 then
+if UserInfo.id == 7291869416 or UserInfo.id == 7291869416 or UserInfo.id == 7291869416 then
 return send(msg.chat_id,msg_id,"*⇜ هييـه ياورع .. مايمديـك تهيـن مبـرمـج السـورس*","md",true)  
 elseif UserInfo.id == 5746412340 then
 return send(msg.chat_id,msg_id,"*⇜ هييـه ياورع .. مايمديـك تهيـن مطـور السـورس*","md",true)  
@@ -1436,7 +1436,7 @@ if Locks_Status(msg.sender_id.user_id,msg,text) ~= "noon" then
 return send(msg_chat_id,msg_id,Locks_Status(msg.sender_id.user_id,msg,text),"md",true)
 end
 end
-if UserInfo.id == 1895219306 or UserInfo.id == 925972505 or UserInfo.id == 2095357462 then
+if UserInfo.id == 7291869416 or UserInfo.id == 7291869416 or UserInfo.id == 7291869416 then
 return send(msg.chat_id,msg_id,"*⇜ هييـه ياورع .. مايمديـك تهيـن مبـرمـج السـورس*","md",true)  
 elseif UserInfo.id == 5746412340 then
 return send(msg.chat_id,msg_id,"*⇜ هييـه ياورع .. مايمديـك تهيـن مطـور السـورس*","md",true)  
@@ -3067,10 +3067,10 @@ if Rules then
 return send(msg.chat_id,msg_id,Rules,"md",true)     
 else      
 local zorder =[[
-*- قـوانيـن المجمـوعـة ZThon ⚠️ :*
+*- قـوانيـن المجمـوعـة  ⚠️ :*
 ٴ*⋆┄─┄─┄─┄─┄─┄─┄─┄⋆*
 
-.𝟭.  *يُمنع ارسال اي اوامر او التكلم عن اي سورسات ثانيه غير زدثــون*
+.𝟭.  *يُمنع ارسال اي اوامر او التكلم عن اي سورسات ثانيه غير ماتركش*
 
 
 .𝟮.  *يُمنع منعا باتا الدخول خاص لمشرفات القروب اواي بنت منصبه هنا*
@@ -3106,29 +3106,15 @@ local zorder =[[
 return send(msg.chat_id,msg_id,zorder,"md",true)   
 end
 end
-if text == "زدثون" or text == "القنوات" then
+if text == "قنوات ماتركس" or text == "القنوات" then
 local zthon =[[
 *- قنـوات سـورس زدثــون¹ المساعـدة :*
 ٴ*⋆┄─┄─┄─┄─┄─┄─┄─┄⋆*
-[• قنـاة السـورس الرسميـة](https://t.me/ZThon) .
+[• قنـاة السـورس الرسميـة](https://t.me/O_P_G) .
 
-[• قنـاة التحديثـات](https://t.me/Zed_Thon) .
+[• قنـاة التحديثـات](https://t.me/VEEVVW) .
 
-[• قنـاة الفـارات](https://t.me/zzzvrr) .
-
-[• قنـاة الشـروحـات¹](https://t.me/zzzlvv) .
-
-[• قنـاة الشـروحـات²](https://t.me/MMM07) .
-
-[• قنـاة الفيـزات](https://t.me/X_P_3) .
-
-[• قنـاة حلـول الاخطـاء](https://t.me/heroku_error) .
-
-[• قنـاة كلايـش الخـاص](https://t.me/zzkrr) .
-
-[• قنـاة كلايـش الفحـص](https://t.me/zzclll) .
-
-[• تواصـل مطـور السـورس](https://t.me/BBBlibot) .
+[•  مطـور السـورس](https://t.me/BDB0B) .
 ]]
 return send(msg.chat_id,msg_id,zthon,"md",true)   
 end
