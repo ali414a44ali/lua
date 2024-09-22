@@ -11,7 +11,7 @@ local msg_chat_id = msg.chat_id
 local msg_id = msg.id
 local msg_reply_id = msg.reply_to_message_id
 local msg_user_send_id = msg.sender_id.user_id
-Bot_Name = (Redis:get(Zelzal.."Zelzal:Name:Bot") or "زلزال")
+Bot_Name = (Redis:get(Zelzal.."Zelzal:Name:Bot") or "ماتركس")
 if text and text:match('^'..Bot_Name..' ') then
 text = text:gsub('^'..Bot_Name..' ','')
 end
