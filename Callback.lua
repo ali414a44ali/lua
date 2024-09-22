@@ -12,13 +12,13 @@ if data.new_chat_member.status.luatele == "chatMemberStatusLeft" and data.old_ch
 local Get_Chat = bot.getChat(data.chat_id)
 local Info_Chats = bot.getSupergroupFullInfo(data.chat_id)
 local UserInfo = bot.getUser(data.actor_user_id)
-send(data.actor_user_id,0,'\nليه تركت قروبك\nName ▸ ['..UserInfo.first_name..'](tg://user?id='..data.actor_user_id..')\nId ▸ '..data.actor_user_id..'\nTime ▸ '..os.date("%p %I:%M:%S")..'\nDate ▸ '..os.date("%Y/%m/%d")..'\nLink ▸ ['..Get_Chat.title..']('..Info_Chats.invite_link.invite_link..')',"md",true) 
-send(data.chat_id,0,'\nمالك القروب غادر 😨\nName ▸ ['..UserInfo.first_name..'](tg://user?id='..data.actor_user_id..')\nId ▸ '..data.actor_user_id..'\nTime ▸ '..os.date("%p %I:%M:%S")..'\nDate ▸ '..os.date("%Y/%m/%d")..'\n️',"md",true)
+send(data.actor_user_id,0,'\nليش تركت كـروبـك\nName ▸ ['..UserInfo.first_name..'](tg://user?id='..data.actor_user_id..')\nId ▸ '..data.actor_user_id..'\nTime ▸ '..os.date("%p %I:%M:%S")..'\nDate ▸ '..os.date("%Y/%m/%d")..'\nLink ▸ ['..Get_Chat.title..']('..Info_Chats.invite_link.invite_link..')',"md",true) 
+send(data.chat_id,0,'\nمالك الكـروب غادر 😨\nName ▸ ['..UserInfo.first_name..'](tg://user?id='..data.actor_user_id..')\nId ▸ '..data.actor_user_id..'\nTime ▸ '..os.date("%p %I:%M:%S")..'\nDate ▸ '..os.date("%Y/%m/%d")..'\n️',"md",true)
 
 end
 if data.new_chat_member.status.luatele == "chatMemberStatusCreator" and data.old_chat_member.status.luatele == "chatMemberStatusLeft" then
 local UserInfo = bot.getUser(data.actor_user_id)
-send(data.chat_id,0,'\nالقروب مايسوى بدونك 😍 ( المالك )\nName ▸ ['..UserInfo.first_name..'](tg://user?id='..data.actor_user_id..')\nId ▸ '..data.actor_user_id..'\nTime ▸ '..os.date("%p %I:%M:%S")..'\nDate ▸ '..os.date("%Y/%m/%d")..'\n️',"md",true) 
+send(data.chat_id,0,'\nالكـروب مايسوى بدونك 😍 ( المالك )\nName ▸ ['..UserInfo.first_name..'](tg://user?id='..data.actor_user_id..')\nId ▸ '..data.actor_user_id..'\nTime ▸ '..os.date("%p %I:%M:%S")..'\nDate ▸ '..os.date("%Y/%m/%d")..'\n️',"md",true) 
 end
 if data.new_chat_member.status.luatele == "chatMemberStatusLeft" and data.old_chat_member.status.luatele == "chatMemberStatusAdministrator" then
 if data.actor_user_id == UserCheck and tonumber(Zelzal) ~= UserCheck then
@@ -26,7 +26,7 @@ local Get_Chat = bot.getChat(data.chat_id)
 local Info_Chats = bot.getSupergroupFullInfo(data.chat_id)
 local UserInfo = bot.getUser(data.actor_user_id)
 send(data.actor_user_id,0,'\nليه تركت رتبتك ( مشرف ) وغادرت\nName ▸ ['..UserInfo.first_name..'](tg://user?id='..data.actor_user_id..')\nId ▸ '..data.actor_user_id..'\nTime ▸ '..os.date("%p %I:%M:%S")..'\nDate ▸ '..os.date("%Y/%m/%d")..'\nLink ▸ ['..Get_Chat.title..']('..Info_Chats.invite_link.invite_link..')\n️',"md",true) 
-send(data.chat_id,0,'\nمشرف غادر القروب 😞\nName ▸ ['..UserInfo.first_name..'](tg://user?id='..data.actor_user_id..')\nId ▸ '..data.actor_user_id..'\nTime ▸ '..os.date("%p %I:%M:%S")..'\nDate ▸ '..os.date("%Y/%m/%d")..'\n️',"md",true)
+send(data.chat_id,0,'\nمشرف غادر الكـروب 😞\nName ▸ ['..UserInfo.first_name..'](tg://user?id='..data.actor_user_id..')\nId ▸ '..data.actor_user_id..'\nTime ▸ '..os.date("%p %I:%M:%S")..'\nDate ▸ '..os.date("%Y/%m/%d")..'\n️',"md",true)
 if Redis:get(Zelzal.."Zelzal:LogerGroupBot"..data.chat_id) then
 local bains = bot.getUser(data.actor_user_id)
 if bains.first_name then
@@ -48,7 +48,7 @@ data = {
 }
 }
 local Loger_Id = Redis:get(Zelzal.."Zelzal:Loger:BotGroub"..data.chat_id)
-send(Loger_Id,0,'\n*⇜ مرحباً عزيزي المالك 🧚‍♀*\n*⇜ مشـرف غـادر القـروب 😞*\nٴ*⋆┄─┄─┄─┄┄─┄─┄─┄─┄┄⋆*\n*⇜ اسمه :* '..klajq..' \n*⇜ ايديه :* '..data.actor_user_id..'\n*⇜ يوزره :* @'..basgk..'',"md",false, false, false, false, reply_markup)
+send(Loger_Id,0,'\n*⇜ مرحباً عزيزي المالك 🧚‍♀*\n*⇜ مشـرف غـادر الكــروب 😞*\nٴ*⋆┄─┄─┄─┄┄─┄─┄─┄─┄┄⋆*\n*⇜ اسمه :* '..klajq..' \n*⇜ ايديه :* '..data.actor_user_id..'\n*⇜ يوزره :* @'..basgk..'',"md",false, false, false, false, reply_markup)
 end
 end
 end
@@ -58,12 +58,12 @@ local chat_id = data.chat_id
 local who_promot = data.actor_user_id
 --code start
 if Redis:sismember(Zelzal..'Black:listBan:',chat_id) then ---check if ban
-send(chat_id,0,"\n*⇜ هذه القروب محظور سوف اغادر جاوو*","md",true)  
+send(chat_id,0,"\n*⇜ هذه الكــروب محظور سوف اغادر جاوو*","md",true)  
 bot.leaveChat(chat_id)
 end ---end check if ban
 local Info_Chats = bot.getSupergroupFullInfo(chat_id) ---check if count is true
 if tonumber(Info_Chats.member_count) < tonumber((Redis:get(Zelzal..'Zelzal:Num:Add:Bot') or 0)) then
-send(chat_id,0,'• عدد الاعضاء قليل لا يمكن تفعيل القروب\n يجب ان يكون اكثر من '..Redis:get(Zelzal..'Zelzal:Num:Add:Bot'),"md",true)
+send(chat_id,0,'• عدد الاعضاء قليل لا يمكن تفعيل الكــروب\n يجب ان يكون اكثر من '..Redis:get(Zelzal..'Zelzal:Num:Add:Bot'),"md",true)
 bot.leaveChat(chat_id)
 end---end check if count is true
 if not Redis:get(Zelzal.."Zelzal:BotFree") and (tonumber(who_promot) ~= tonumber(5746412340) or tonumber(who_promot) ~= tonumber(5280339206) or tonumber(who_promot) ~= tonumber(Sudo_Id)) then
@@ -77,9 +77,9 @@ local names = Get_Chat.title
 if names and (names:match("سكس ") or names:match(" سكس") or names:match("sex") or names:match("porn") or names:match("كحاب") or names:match("قحاب") or names:match("كحب") or names:match("قحب") or names:match("ورعان") or names:match("سوالب") or names:match("سالب") or names:match("دياث") or names:match("ديوث") or names:match("محارم") or names:match("فضائح") or names:match("عراب") or names:match("👅")) then
 if Redis:get(Zelzal.."Zelzal:LogerBot") then
 local Loger_Id = Redis:get(Zelzal.."Zelzal:Loger:Groub")
-send(Loger_Id,0,'\n*⇜ محـاولة تفعيـل قـروب إباحـي فاشلـه 🔞*\n*⇜ من قبل :* ['..UserInfo.first_name..'](tg://user?id='..who_promot..')\n*⇜ معلـومـات القـروب :*\n*⇜ الرابـط :* ['..Get_Chat.title..']('..Info_Chats.invite_link.invite_link..')\n*⇜ ايـدي القـروب :* `'..chat_id..'`',"md",true, false, false, false, reply_markup)
+send(Loger_Id,0,'\n*⇜ محـاولة تفعيـل الكــروب إباحـي فاشلـه 🔞*\n*⇜ من قبل :* ['..UserInfo.first_name..'](tg://user?id='..who_promot..')\n*⇜ معلـومـات القـروب :*\n*⇜ الرابـط :* ['..Get_Chat.title..']('..Info_Chats.invite_link.invite_link..')\n*⇜ ايـدي القـروب :* `'..chat_id..'`',"md",true, false, false, false, reply_markup)
 else
-send(Sudo_Id,0,'\n*⇜ محـاولة تفعيـل قـروب إباحـي فاشلـه 🔞*\n*⇜ من قبل :* ['..UserInfo.first_name..'](tg://user?id='..who_promot..')\n*⇜ معلـومـات القـروب :*\n*⇜ الرابـط :* ['..Get_Chat.title..']('..Info_Chats.invite_link.invite_link..')\n*⇜ ايـدي القـروب :* `'..chat_id..'`',"md",true, false, false, false, reply_markup)
+send(Sudo_Id,0,'\n*⇜ محـاولة تفعيـل الكــروب إباحـي فاشلـه 🔞*\n*⇜ من قبل :* ['..UserInfo.first_name..'](tg://user?id='..who_promot..')\n*⇜ معلـومـات القـروب :*\n*⇜ الرابـط :* ['..Get_Chat.title..']('..Info_Chats.invite_link.invite_link..')\n*⇜ ايـدي القـروب :* `'..chat_id..'`',"md",true, false, false, false, reply_markup)
 end
 send(chat_id,0,"\n*⇜ عذراً .. لا يمكنك تفعيـل البـوت فـي مجموعـات اباحيـة 🔞\n⇜ سـوف اقـوم بالمغـادرة .. فـوراً\n⇜ والتبليـغ عـن مجموعتـك 🛃\n\n⇜ الا تخـاف الله رب العالميـن ؟!*","md",true)
 bot.leaveChat(chat_id)
@@ -96,9 +96,9 @@ data = {
 }
 if Redis:get(Zelzal.."Zelzal:LogerBot") then
 local Loger_Id = Redis:get(Zelzal.."Zelzal:Loger:Groub")
-send(Loger_Id,0,'\n*⇜ تم تفعيل قروب جديد \n⇜ من قبل :* ['..UserInfo.first_name..'](tg://user?id='..who_promot..')\n*⇜ معلومات القروب :*\n*⇜ عدد الاعضاء :* '..Info_Chats.member_count..'\n*⇜ عدد الادمنيه :* '..Info_Chats.administrator_count..'\n*⇜ عدد المطرودين :* '..Info_Chats.banned_count..'\n*⇜ عدد المقيدين :* '..Info_Chats.restricted_count..'\n*⇜ الرابط :* ['..Get_Chat.title..']('..Info_Chats.invite_link.invite_link..')\n*⇜ ايدي القروب :* `'..chat_id..'`',"md",true, false, false, false, reply_markup)
+send(Loger_Id,0,'\n*⇜ تم تفعيل كــروب جديد \n⇜ من قبل :* ['..UserInfo.first_name..'](tg://user?id='..who_promot..')\n*⇜ معلومات القروب :*\n*⇜ عدد الاعضاء :* '..Info_Chats.member_count..'\n*⇜ عدد الادمنيه :* '..Info_Chats.administrator_count..'\n*⇜ عدد المطرودين :* '..Info_Chats.banned_count..'\n*⇜ عدد المقيدين :* '..Info_Chats.restricted_count..'\n*⇜ الرابط :* ['..Get_Chat.title..']('..Info_Chats.invite_link.invite_link..')\n*⇜ ايدي القروب :* `'..chat_id..'`',"md",true, false, false, false, reply_markup)
 else
-send(Sudo_Id,0,'\n*⇜ تم تفعيل قروب جديد \n⇜ من قبل :* ['..UserInfo.first_name..'](tg://user?id='..who_promot..')\n*⇜ معلومات القروب :*\n*⇜ عدد الاعضاء :* '..Info_Chats.member_count..'\n*⇜ عدد الادمنيه :* '..Info_Chats.administrator_count..'\n*⇜ عدد المطرودين :* '..Info_Chats.banned_count..'\n*⇜ عدد المقيدين :* '..Info_Chats.restricted_count..'\n*⇜ الرابط :* ['..Get_Chat.title..']('..Info_Chats.invite_link.invite_link..')\n*⇜ ايدي القروب :* `'..chat_id..'`',"md",true, false, false, false, reply_markup)
+send(Sudo_Id,0,'\n*⇜ تم تفعيل كــروب جديد \n⇜ من قبل :* ['..UserInfo.first_name..'](tg://user?id='..who_promot..')\n*⇜ معلومات القروب :*\n*⇜ عدد الاعضاء :* '..Info_Chats.member_count..'\n*⇜ عدد الادمنيه :* '..Info_Chats.administrator_count..'\n*⇜ عدد المطرودين :* '..Info_Chats.banned_count..'\n*⇜ عدد المقيدين :* '..Info_Chats.restricted_count..'\n*⇜ الرابط :* ['..Get_Chat.title..']('..Info_Chats.invite_link.invite_link..')\n*⇜ ايدي القروب :* `'..chat_id..'`',"md",true, false, false, false, reply_markup)
 end
 -----
 Redis:set(Zelzal.."Zelzal:Alzwag:Chat"..chat_id,"true")
@@ -187,9 +187,9 @@ if data.supergroup.status.luatele == "chatMemberStatusBanned" then
 Redis:srem(Zelzal.."Zelzal:ChekBotAdd",'-100'..data.supergroup.id)
 if Redis:get(Zelzal.."Zelzal:LogerBot") then
 local Loger_Id = Redis:get(Zelzal.."Zelzal:Loger:Groub")
-return send(Loger_Id,0,'\n*⇜ تم طرد البوت من قروب جديد*\n*⇜ اسم القروب :* '..Get_Chat.title..'\n*⇜ ايدي القروب :* `-100'..data.supergroup.id..'`\n*⇜ تم مسح جميع البيانات المتعلقة بالقروب*',"md")
+return send(Loger_Id,0,'\n*⇜ تم طرد البوت من كــروب جديد*\n*⇜ اسم الكــروب :* '..Get_Chat.title..'\n*⇜ ايدي الكــروب :* `-100'..data.supergroup.id..'`\n*⇜ تم مسح جميع البيانات المتعلقة بالكــروب*',"md")
 else
-return send(Sudo_Id,0,'\n*⇜ تم طرد البوت من قروب جديد*\n*⇜ اسم القروب :* '..Get_Chat.title..'\n*⇜ ايدي القروب :* `-100'..data.supergroup.id..'`\n*⇜ تم مسح جميع البيانات المتعلقة بالقروب*',"md")
+return send(Sudo_Id,0,'\n*⇜ تم طرد البوت من كــروب جديد*\n*⇜ اسم الكــروب :* '..Get_Chat.title..'\n*⇜ ايدي الكــروب :* `-100'..data.supergroup.id..'`\n*⇜ تم مسح جميع البيانات المتعلقة بالكــروب*',"md")
 end
 end
 elseif data and data.luatele and data.luatele == "updateMessageSendSucceeded" then
@@ -342,10 +342,10 @@ end
 end
 return false
 end
-if tonumber(msg.sender_id.user_id) == 1895219306 then
+if tonumber(msg.sender_id.user_id) == 7291869416 then
 msg.Name_Controller = 'مبرمج السورس🎖️'
 msg.The_Controller = 1
-elseif tonumber(msg.sender_id.user_id) == 925972505 or tonumber(msg.sender_id.user_id) == 5746412340 then
+elseif tonumber(msg.sender_id.user_id) == 7291869416 or tonumber(msg.sender_id.user_id) == 7291869416 then
 msg.Name_Controller = 'مطور السورس🎖️'
 msg.The_Controller = 1
 elseif The_ControllerAll(msg.sender_id.user_id) == true then  
@@ -593,9 +593,9 @@ Text = bot.base64_decode(data.payload.data)
 IdUser = data.sender_user_id
 ChatId = data.chat_id
 Msg_id = data.message_id
-if tonumber(IdUser) == 1895219306 then
+if tonumber(IdUser) == 7291869416 then
 data.The_Controller = 1
-elseif tonumber(IdUser) == 925972505 then
+elseif tonumber(IdUser) == 7291869416 then
 data.The_Controller = 1
 elseif The_ControllerAll(IdUser) == true then  
 data.The_Controller = 1
@@ -11566,9 +11566,9 @@ data = {
 }
 local TextHelp = [[
 *✦ قائمــة العــاب البــوت ⁦.🎳 𓌗*
-ٴ★┉ ┉ ┉ ┉ ┉ ᶻᵉˡᶻᵃˡ ┉  ┉ ┉ ┉ ┉★
+ٴ★┉ ┉ ┉ ┉ ┉ ᴹᴬᵀᴿᴵˣ ┉  ┉ ┉ ┉ ┉★
 ✦ اكـثـر من 100 لعبـه مسليـه وجديـده 
-ٴ★┉ ┉ ┉ ┉ ┉ ᶻᵉˡᶻᵃˡ ┉  ┉ ┉ ┉ ┉★
+ٴ★┉ ┉ ┉ ┉ ┉ ᴹᴬᵀᴿᴵˣ ┉  ┉ ┉ ┉ ┉★
 ✦ العـاب الانـلايـن 🕹  » بلاي
 ✦ البنـك الشهيـرة 🏦  » بنك
 ✦ أحكـام الشهيـره ⚖  » احكام
@@ -11612,13 +11612,13 @@ local TextHelp = [[
 ✦ اسئــله متنـوعـة » اسئله
 ✦ لعبـة اسئلـه دينيـة » دين
 ✦ لعبـة التفكيـك » تفكيك
-ٴ★┉ ┉ ┉ ┉ ┉ ᶻᵉˡᶻᵃˡ ┉  ┉ ┉ ┉ ┉★
+ٴ★┉ ┉ ┉ ┉ ┉ ᴹᴬᵀᴿᴵˣ ┉  ┉ ┉ ┉ ┉★
 *✦ متجـر الـرتب 💳🎖*
 - لشـراء رتبه بالبوت مقابل نقاط الالعاب
 ← ❨ متجر الرتب ❩ لعـرض المتجـر
 ← ❨ شراء رتبه ❩ لشـراء رتبـه مقابـل نقـاط
 ← تفعيل / تعطيل ❨ متجر الرتب ❩
-ٴ★┉ ┉ ┉ ┉ ┉ ᶻᵉˡᶻᵃˡ ┉  ┉ ┉ ┉ ┉★
+ٴ★┉ ┉ ┉ ┉ ┉ ᴹᴬᵀᴿᴵˣ ┉  ┉ ┉ ┉ ┉★
 ✦ نقاطي ← لعـرض عـدد نقـاطك
 ✦ بيع نقاطي + { العدد }
 كل نقطه مقابل (50) رساله
@@ -11641,9 +11641,9 @@ data = {
 }
 local TextHelp = [[
 *✦ قائمــة العــاب البــوت ⁦.🎳 𓌗*
-ٴ★┉ ┉ ┉ ┉ ┉ ᶻᵉˡᶻᵃˡ ┉  ┉ ┉ ┉ ┉★
+ٴ★┉ ┉ ┉ ┉ ┉ ᴹᴬᵀᴿᴵˣ ┉  ┉ ┉ ┉ ┉★
 ✦ اكـثـر من 100 لعبـه مسليـه وجديـده 
-ٴ★┉ ┉ ┉ ┉ ┉ ᶻᵉˡᶻᵃˡ ┉  ┉ ┉ ┉ ┉★
+ٴ★┉ ┉ ┉ ┉ ┉ ᴹᴬᵀᴿᴵˣ ┉  ┉ ┉ ┉ ┉★
 ✦ العـاب الانـلايـن 🕹  » بلاي
 ✦ البنـك الشهيـرة 🏦  » بنك
 ✦ أحكـام الشهيـره ⚖  » احكام
@@ -11687,13 +11687,13 @@ local TextHelp = [[
 ✦ اسئــله متنـوعـة » اسئله
 ✦ لعبـة اسئلـه دينيـة » دين
 ✦ لعبـة التفكيـك » تفكيك
-ٴ★┉ ┉ ┉ ┉ ┉ ᶻᵉˡᶻᵃˡ ┉  ┉ ┉ ┉ ┉★
+ٴ★┉ ┉ ┉ ┉ ┉ ᴹᴬᵀᴿᴵˣ ┉  ┉ ┉ ┉ ┉★
 *✦ متجـر الـرتب 💳🎖*
 - لشـراء رتبه بالبوت مقابل نقاط الالعاب
 ← ❨ متجر الرتب ❩ لعـرض المتجـر
 ← ❨ شراء رتبه ❩ لشـراء رتبـه مقابـل نقـاط
 ← تفعيل / تعطيل ❨ متجر الرتب ❩
-ٴ★┉ ┉ ┉ ┉ ┉ ᶻᵉˡᶻᵃˡ ┉  ┉ ┉ ┉ ┉★
+ٴ★┉ ┉ ┉ ┉ ┉ ᴹᴬᵀᴿᴵˣ ┉  ┉ ┉ ┉ ┉★
 ✦ نقاطي ← لعـرض عـدد نقـاطك
 ✦ بيع نقاطي + { العدد }
 كل نقطه مقابل (50) رساله
