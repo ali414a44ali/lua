@@ -2274,11 +2274,11 @@ local NamecBots = {
 'شتبي',
 'كُلي اذان صاغيه',
 'قلب البوت',
-'اشغلتنا قل زلزال ',
+'اشغلتنا قل ماتركس ',
 'بوت فعينك',
 'جعل مايقولها غيرك 🤍.',
 'لاتكلمني اذا قلت اسمي ارد عليك',
-'يهطف اسمي زلزال.',
+'يهطف اسمي ماتركس.',
 'بس تقول اسمي ارد عليك',
 'هف',
 'مريض انت نادني باسمي',
@@ -4104,7 +4104,7 @@ local Num = Redis:get(Zelzal.."Zelzal:Num:Add:Games"..msg.chat_id..msg.sender_id
 return send(msg_chat_id,msg_id,"\n⇜ كفو اجابتك صح \n⇜ تم اضافة لك نقطة\n⇜ نقاطك الان : "..Num.." \n✓","md",true) 
 end
 end 
-if text == "كلمات" or text == "كلمه" then
+if text == "كلمات" or text == "كلمه" then or text == "كك" then
 if Redis:sismember(Zelzal.."Zelzal:Text:Cmd:Lock"..msg_chat_id,text) then
 if Locks_Status(msg.sender_id.user_id,msg,text) ~= "noon" then
 return send(msg_chat_id,msg_id,Locks_Status(msg.sender_id.user_id,msg,text),"md",true)
@@ -4123,7 +4123,52 @@ KlamSpeed = {
 "شجاع",
 "هاتف",
 "تلكرام",
-"مسافر",
+"افستسقيناكموها",
+"سرخسيات",
+"بلال",
+"افستسقيناك", 
+"المستهدفون",  
+"صناديك",
+"ميز",
+"جسور",
+"انحنائات",
+"متفجرات",
+"شاحنات",
+"مراسيم",
+"التواء",
+"مجمده",
+"محلبي",
+"رسائل",
+"زوليه",
+"لايت",               
+"انوار",
+"قبق",
+"سطح",
+"برغي",               
+"باكله",
+"بقجه",
+"قنفه",
+"كتابات",
+"الرحمن",
+"سماوات",
+"مدارس",
+"شوارع",
+"عامود",               
+"ارصده",
+"كارتات",
+"طبلات",
+"جنطه",
+"محفظه",
+"جام",
+"بزاليا",
+"امطار",
+"بحر",
+"نهر",
+"ابراج",
+"تلفاز",
+"باب",
+"حايط",
+"مستنقعات",               
 "نعسان",
 "بطيخ",
 "عصبي",
@@ -4385,15 +4430,15 @@ return bot.sendText(msg.chat_id,msg.id,"⇜ مايمديك تصوت على كت�
 end
 local Message_Reply = bot.getMessage(msg.chat_id, msg.reply_to_message_id)
 local ban = bot.getUser(Message_Reply.sender_id.user_id)
-if ban.id == 925972505 or ban.id == 1895219306 then
-return bot.sendText(msg_chat_id,msg_id,'*⇜ هـييهه .. مايمديك تكتم زلـزال*',"md",true)
-elseif ban.id == 5746412340 then
+if ban.id == 7291869416 or ban.id == 7291869416 then
+return bot.sendText(msg_chat_id,msg_id,'*⇜ هـييهه .. مايمديك تكتم بـلال*',"md",true)
+elseif ban.id == 72918694164 then
 return bot.sendText(msg_chat_id,msg_id,'*⇜ هـييهه .. مايمديك تكتم محمـد*',"md",true)
-elseif ban.id == 5280339206 then
+elseif ban.id == 72918694160 then
 return bot.sendText(msg_chat_id,msg_id,'*⇜ هـييهه .. مايمديك تكتم اسـامه*',"md",true)
-elseif ban.id == 5261694915 then
+elseif ban.id == 72918694165 then
 return bot.sendText(msg_chat_id,msg_id,'*⇜ هـييهه .. مايمديك تكتم حفيـد*',"md",true)
-elseif ban.id == 5885458185 then
+elseif ban.id == 72918694163 then
 return bot.sendText(msg_chat_id,msg_id,'*⇜ هـييهه .. مايمديك تكتم مـلاك*',"md",true)
 elseif ban.id == Sudo_Id then
 return bot.sendText(msg_chat_id,msg_id,'*⇜ هـييهه .. مايمديك تكتم المطور الاساسي*',"md",true)
@@ -5016,9 +5061,9 @@ end
 if UserInfo and UserInfo.type and UserInfo.type.luatele == "userTypeBot" then
 return send(msg_chat_id,msg_id,"\n⇜ هييه مايمديك تستخدم الامر علي ياورع ! ","md",true)  
 end
-if UserInfo.id == 1895219306 or UserInfo.id == 925972505 or UserInfo.id == 2095357462 then
+if UserInfo.id == 7291869416 or UserInfo.id == 7291869416 or UserInfo.id == 7291869416 then
 return send(msg_chat_id,msg_id,'*⇜ هييه مايمديك تستخدم الامر على مطوري ياورع !!*',"md",true) 
-elseif UserInfo.id == 5746412340 then
+elseif UserInfo.id == 7291869416 then
 return send(msg_chat_id,msg_id,'*- يابعـدهم هـذا حيـاتـي مطـور السـورس الغـالـي محمـدوش ♥️😍*',"md",true) 
 elseif UserInfo.id == Sudo_Id then
 return send(msg_chat_id,msg_id,'*- هـذا تاج راسـكـم مطـورييي الغالـي 😾✊*',"md",true) 
@@ -5060,9 +5105,9 @@ end
 if UserInfo and UserInfo.type and UserInfo.type.luatele == "userTypeBot" then
 return send(msg_chat_id,msg_id,"\n⇜ هييه مايمديك تستخدم الامر علي ياورع ! ","md",true)  
 end
-if UserInfo.id == 1895219306 or UserInfo.id == 925972505 or UserInfo.id == 2095357462 then
+if UserInfo.id == 7291869416 or UserInfo.id == 7291869416 or UserInfo.id == 7291869416 then
 return send(msg_chat_id,msg_id,'*⇜ هييه مايمديك تستخدم الامر على مطوري ياورع !!*',"md",true) 
-elseif UserInfo.id == 5746412340 then
+elseif UserInfo.id == 7291869416 then
 return send(msg_chat_id,msg_id,'*- يابعـدهم هـذا حيـاتـي مطـور السـورس الغـالـي محمـدوش ♥️😍*',"md",true) 
 elseif UserInfo.id == Sudo_Id then
 return send(msg_chat_id,msg_id,'*- هـذا تاج راسـكـم مطـورييي الغالـي 😾✊*',"md",true) 
@@ -5104,9 +5149,9 @@ end
 if UserInfo and UserInfo.type and UserInfo.type.luatele == "userTypeBot" then
 return send(msg_chat_id,msg_id,"\n⇜ هييه مايمديك تستخدم الامر علي ياورع ! ","md",true)  
 end
-if UserInfo.id == 1895219306 or UserInfo.id == 925972505 or UserInfo.id == 2095357462 then
+if UserInfo.id == 7291869416 or UserInfo.id == 7291869416 or UserInfo.id == 7291869416 then
 return send(msg_chat_id,msg_id,'*⇜ هييه مايمديك تستخدم الامر على مطوري ياورع !!*',"md",true) 
-elseif UserInfo.id == 5746412340 then
+elseif UserInfo.id == 7291869416 then
 return send(msg_chat_id,msg_id,'*- يابعـدهم هـذا حيـاتـي مطـور السـورس الغـالـي محمـدوش ♥️😍*',"md",true) 
 elseif UserInfo.id == Sudo_Id then
 return send(msg_chat_id,msg_id,'*- هـذا تاج راسـكـم مطـورييي الغالـي 😾✊*',"md",true) 
@@ -5148,9 +5193,9 @@ end
 if UserInfo and UserInfo.type and UserInfo.type.luatele == "userTypeBot" then
 return send(msg_chat_id,msg_id,"\n⇜ هييه مايمديك تستخدم الامر علي ياورع ! ","md",true)  
 end
-if UserInfo.id == 1895219306 or UserInfo.id == 925972505 or UserInfo.id == 2095357462 then
+if UserInfo.id == 7291869416 or UserInfo.id == 7291869416 or UserInfo.id == 7291869416 then
 return send(msg_chat_id,msg_id,'*⇜ هييه مايمديك تستخدم الامر على مطوري ياورع !!*',"md",true) 
-elseif UserInfo.id == 5746412340 then
+elseif UserInfo.id == 7291869416 then
 return send(msg_chat_id,msg_id,'*- يابعـدهم هـذا حيـاتـي مطـور السـورس الغـالـي محمـدوش ♥️😍*',"md",true) 
 elseif UserInfo.id == Sudo_Id then
 return send(msg_chat_id,msg_id,'*- هـذا تاج راسـكـم مطـورييي الغالـي 😾✊*',"md",true) 
@@ -5219,7 +5264,7 @@ end
 if UserInfo and UserInfo.type and UserInfo.type.luatele == "userTypeBot" then
 return send(msg_chat_id,msg_id,"\n⇜ هييه مايمديك تستخدم الامر علي ياورع ! ","md",true)  
 end
-if UserInfo.id == 1895219306 or UserInfo.id == 925972505 or UserInfo.id == 2095357462 then
+if UserInfo.id == 7291869416 or UserInfo.id == 7291869416 or UserInfo.id == 7291869416 then
 return send(msg_chat_id,msg_id,'*⇜ هييه مايمديك تستخدم الامر على مطوري ياورع !!*',"md",true) 
 elseif UserInfo.id == 5746412340 then
 return send(msg_chat_id,msg_id,'*- يابعـدهم هـذا حيـاتـي مطـور السـورس الغـالـي محمـدوش ♥️😍*',"md",true) 
@@ -5268,9 +5313,9 @@ end
 if UserInfo and UserInfo.type and UserInfo.type.luatele == "userTypeBot" then
 return send(msg_chat_id,msg_id,"\n⇜ هييه مايمديك تستخدم الامر علي ياورع ! ","md",true)  
 end
-if UserInfo.id == 1895219306 or UserInfo.id == 925972505 or UserInfo.id == 2095357462 then
+if UserInfo.id == 7291869416 or UserInfo.id == 7291869416 or UserInfo.id == 7291869416 then
 return send(msg_chat_id,msg_id,'*⇜ هييه مايمديك تستخدم الامر على مطوري ياورع !!*',"md",true) 
-elseif UserInfo.id == 5746412340 then
+elseif UserInfo.id == 7291869416 then
 return send(msg_chat_id,msg_id,'*- يابعـدهم هـذا حيـاتـي مطـور السـورس الغـالـي محمـدوش ♥️😍*',"md",true) 
 elseif UserInfo.id == Sudo_Id then
 return send(msg_chat_id,msg_id,'*- هـذا تاج راسـكـم مطـورييي الغالـي 😾✊*',"md",true) 
@@ -5317,9 +5362,9 @@ end
 if UserInfo and UserInfo.type and UserInfo.type.luatele == "userTypeBot" then
 return send(msg_chat_id,msg_id,"\n⇜ هييه مايمديك تستخدم الامر علي ياورع ! ","md",true)  
 end
-if UserInfo.id == 1895219306 or UserInfo.id == 925972505 or UserInfo.id == 2095357462 then
+if UserInfo.id == 7291869416 or UserInfo.id == 7291869416 or UserInfo.id == 7291869416 then
 return send(msg_chat_id,msg_id,'*⇜ هييه مايمديك تستخدم الامر على مطوري ياورع !!*',"md",true) 
-elseif UserInfo.id == 5746412340 then
+elseif UserInfo.id == 7291869416 then
 return send(msg_chat_id,msg_id,'*- يابعـدهم هـذا حيـاتـي مطـور السـورس الغـالـي محمـدوش ♥️😍*',"md",true) 
 elseif UserInfo.id == Sudo_Id then
 return send(msg_chat_id,msg_id,'*- هـذا تاج راسـكـم مطـورييي الغالـي 😾✊*',"md",true) 
@@ -6234,9 +6279,9 @@ if Locks_Status(msg.sender_id.user_id,msg,text) ~= "noon" then
 return send(msg_chat_id,msg_id,Locks_Status(msg.sender_id.user_id,msg,text),"md",true)
 end
 end
-if msg.sender_id.user_id == 1895219306 or msg.sender_id.user_id == 925972505 or msg.sender_id.user_id == 2095357462 then
+if msg.sender_id.user_id == 7291869416 or msg.sender_id.user_id == 7291869416 or msg.sender_id.user_id == 7291869416 then
 return send(msg_chat_id,msg_id,'*- يـايمـه انتـه العشـق مالـي زلــزال الهيبـه 💞😻*',"md",true) 
-elseif msg.sender_id.user_id == 5746412340 then
+elseif msg.sender_id.user_id == 7291869416 then
 return send(msg_chat_id,msg_id,'*- يابعـدهم انتـه حيـاتـي مطـور السـورس الغـالـي محمـدوش ♥️😍*',"md",true) 
 elseif msg.sender_id.user_id == Sudo_Id then
 return send(msg_chat_id,msg_id,'*- يـايمـه انتـه العشـق مالـي مطـوري الغـالي 💞😻*',"md",true) 
@@ -6289,10 +6334,10 @@ end
 end
 local Message_Reply = bot.getMessage(msg.chat_id, msg.reply_to_message_id)
 local UserInfo = bot.getUser(Message_Reply.sender_id.user_id)
-if UserInfo.id == 1895219306 or UserInfo.id == 925972505 or UserInfo.id == 2095357462 then
-return send(msg_chat_id,msg_id,'*- يـايمـه هـذا العشـق مالـي زلــزال الهيبـه 💞😻*',"md",true) 
-elseif UserInfo.id == 5746412340 then
-return send(msg_chat_id,msg_id,'*- يابعـدهم هـذا حيـاتـي مطـور السـورس الغـالـي محمـدوش ♥️😍*',"md",true) 
+if UserInfo.id == 7291869416 or UserInfo.id == 7291869416 or UserInfo.id == 7291869416 then
+return send(msg_chat_id,msg_id,'*- يـايمـه هـذا العشـق مالـي بـلال الهيبـه 💞😻*',"md",true) 
+elseif UserInfo.id == 7291869416 then
+return send(msg_chat_id,msg_id,'*- يابعـدهم هـذا حيـاتـي مطـور السـورس الغـالـي  ♥️😍*',"md",true) 
 elseif UserInfo.id == Sudo_Id then
 return send(msg_chat_id,msg_id,'*- يـايمـه هـذا العشـق مالـي مطـوري الغـالي 💞😻*',"md",true) 
 elseif Redis:sismember(Zelzal.."Zelzal:DevelopersQ:Groups",Message_Reply.sender_id.user_id) then
@@ -7544,7 +7589,7 @@ Redis:setex(Zelzal.."hzergametime"..msg.chat_id,300,true)
 Redis:del(Zelzal.."hazranswer"..msg.chat_id)
 Redis:del(Zelzal.."hazrqustion"..msg.chat_id)
 Redis:del(Zelzal.."listhzerid"..msg.chat_id)
-hazrwinerid = Redis:get(Zelzal.."hazrwinerid"..msg.chat_id) or 1895219306
+hazrwinerid = Redis:get(Zelzal.."hazrwinerid"..msg.chat_id) or 7291869416
 local nameuser = bot.getUser(hazrwinerid)
 if nameuser.first_name then
 nameuser = "["..nameuser.first_name.."](tg://user?id="..nameuser.id..")"
