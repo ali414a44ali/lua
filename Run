@@ -1,5 +1,0 @@
-cd $(cd $(dirname $0); pwd)
-while(true) do
-screen -S Z0_Ol -X kill
-screen -S Z0_Ol ./Zelzal
-done
