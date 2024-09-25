@@ -4104,7 +4104,7 @@ local Num = Redis:get(Zelzal.."Zelzal:Num:Add:Games"..msg.chat_id..msg.sender_id
 return send(msg_chat_id,msg_id,"\n⇜ كفو اجابتك صح \n⇜ تم اضافة لك نقطة\n⇜ نقاطك الان : "..Num.." \n✓","md",true) 
 end
 end 
-if text == "كلمات" or text == "كلمه" then or text == "كك" then
+if text == "كلمات" or text == "كلمه"  or text == "كك" then
 if Redis:sismember(Zelzal.."Zelzal:Text:Cmd:Lock"..msg_chat_id,text) then
 if Locks_Status(msg.sender_id.user_id,msg,text) ~= "noon" then
 return send(msg_chat_id,msg_id,Locks_Status(msg.sender_id.user_id,msg,text),"md",true)
