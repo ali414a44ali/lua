@@ -18371,7 +18371,7 @@ if text == '/start' or text == '✦ رجـوع ✦' then
 local photo = bot.getUserProfilePhotos(Zelzal)
 local ban = bot.getUser(Zelzal)
 local Zilzal = bot.getUser(Sudo_Id) 
-local Ahmedd = (Redis:get(Zelzal.."Zelzal:Name:Bot") or "زلـزال")
+local Ahmedd = (Redis:get(Zelzal.."Zelzal:Name:Bot") or "ماتركس")
 local bain = bot.getUser(msg.sender_id.user_id)
 Participants = (Redis:scard(Zelzal..'Zelzal:Num:User:Pv') or 0)
 Redis:sadd(Zelzal..'Zelzal:Num:User:Pv',msg.sender_id.user_id)  
