@@ -18459,7 +18459,7 @@ data = {
 {{text = '✦ تعطيل نداء المطور ✦',type = 'text'},{text = '✦ تفعيل نداء المطور ✦', type = 'text'},},
 {{text = '✦ الغـاء الامــر ✦',type = 'text'},},
 {{text = '✦ رجـوع ✦',type = 'text'},},}}
-return send(msg_chat_id,msg_id,'*⇜ مرحبـاً بك مجـدداً .. عـزيـزي المطـور* \n*⇜ اليك الازرار الخاصـه بـ اوامـر البـوت لسـورس ᶻᵉˡᶻᵃˡ زلــزال*', 'md', false, false, false, false, reply_markup)
+return send(msg_chat_id,msg_id,'*⇜ مرحبـاً بك مجـدداً .. عـزيـزي المطـور* \n*⇜ اليك الازرار الخاصـه بـ اوامـر البـوت لسـورس ᴹᴬᵀᴿᴵˣ مـاتركـس*', 'md', false, false, false, false, reply_markup)
 end
 if text == "★ الاحصائيـات ★" and msg.ControllerBot then
 local reply_markup = bot.replyMarkup{type = 'keyboard',resize = true,is_personal = true,data = {
@@ -18500,7 +18500,7 @@ data = {
 {{text = '✦ اذاعـه بالتوجيـه ✦',type = 'text'},{text = '✦ اذاعه بالتوجيه خاص ✦', type = 'text'},},
 {{text = '✦ الغـاء الامــر ✦',type = 'text'},},
 {{text = '✦ رجـوع ✦',type = 'text'},},}}
-return send(msg_chat_id,msg_id,'*⇜ مرحبـاً بك مجـدداً .. عـزيـزي المطـور* \n*⇜ اليك الازرار الخاصـه بالاذاعـه لسـورس ᶻᵉˡᶻᵃˡ زلــزال*', 'md', false, false, false, false, reply_markup)
+return send(msg_chat_id,msg_id,'*⇜ مرحبـاً بك مجـدداً .. عـزيـزي المطـور* \n*⇜ اليك الازرار الخاصـه بالاذاعـه لسـورس ᴹᴬᵀᴿᴵˣ مـاتركـس*', 'md', false, false, false, false, reply_markup)
 end
 if text == "اوامر الاشتراك الاجباري" or text == "★ الاشتـراك الاجبـاري ★" then
 if msg.ControllerBot then
