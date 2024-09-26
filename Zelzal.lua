@@ -16401,7 +16401,7 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '˹  𝗨𝗽𝗱𝗮𝘁𝗲 ⁦. 𓌗', url = 't.me/VEEVVW'},},
+{{text = '˹  𝗨𝗽𝗱𝗮𝘁𝗲 ⁦. 𓌗', url = 't.me/Qu_Quu'},},
 {{text = '˹  𝙈𝘼𝙏𝙍𝙄𝙓 ⁦. 𓌗', url = 't.me/O_P_G '},},
 }
 local msg_id = msg.id/2097152/0.5
