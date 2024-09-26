@@ -16405,7 +16405,7 @@ keyboard.inline_keyboard = {
 {{text = '˹  𝙈𝘼𝙏𝙍𝙄𝙓 ⁦. 𓌗', url = 't.me/O_P_G '},},
 }
 local msg_id = msg.id/2097152/0.5
-return https.request("https://api.telegram.org/bot"..Token..'/sendPhoto?chat_id=' .. msg.chat_id .. '&photo=https://t.me/Z_ZZZ8/71?single&caption=' ..URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+return https.request("https://api.telegram.org/bot"..Token..'/sendPhoto?chat_id=' .. msg.chat_id .. '&photo=https://t.me/O_P_G/12?single&caption=' ..URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 end
 if text == 'الاوامر' or text == '/Commands@'..UserBot..'' then
