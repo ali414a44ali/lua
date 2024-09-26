@@ -18446,7 +18446,7 @@ local reply_markup = bot.replyMarkup{type = 'keyboard',resize = true,is_personal
 {{text = '✦ تغيير كليشة المطور ✦',type = 'text'},{text = '✦ حذف كليشة المطور ✦', type = 'text'},},
 {{text = '✦ الغـاء الامــر ✦',type = 'text'},},
 {{text = '✦ رجـوع ✦',type = 'text'},},}}
-return send(msg_chat_id,msg_id,'*⇜ مرحبـاً بك مجـدداً .. عـزيـزي المطـور* \n*⇜ اليك الازرار الخاصـه بالمطـوريـن لسـورس ᶻᵉˡᶻᵃˡ زلــزال*', 'md', false, false, false, false, reply_markup)
+return send(msg_chat_id,msg_id,'*⇜ مرحبـاً بك مجـدداً .. عـزيـزي المطـور* \n*⇜ اليك الازرار الخاصـه بالمطـوريـن لسـورس ᴹᴬᵀᴿᴵˣ مـاتركـس*', 'md', false, false, false, false, reply_markup)
 end
 end
 if text == "★ البـوت ★" and msg.ControllerBot then
