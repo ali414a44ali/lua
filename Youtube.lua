@@ -1,7 +1,7 @@
 function youtube(msg)
 text = nil
 if msg and msg.content and msg.content.text then
-xname =  (Redis:get(Fast.."Name:Bot") or "ماتركس") 
+xname =  (Redis:get(Zelzal.."Zelzal:Name:Bot") or "بووت") 
 text = msg.content.text.text
 if text:match("^"..xname.." (.*)$") then
 text = text:match("^"..xname.." (.*)$")
@@ -13,7 +13,7 @@ if tonumber(msg.sender_id.user_id) == tonumber(Fast) then
 return false
 end
 if text then
-local neww = Redis:get(Fast.."Get:Reides:Commands:Group"..msg.chat_id..":"..text) or Redis:get(Fast.."All:Get:Reides:Commands:Group"..text)
+local neww = Redis:get(Zelzal.."Zelzal:Get:Reides:Commands:Group"..msg.chat_id..":"..text) or Redis:get(Zelzal.."All:Get:Reides:Commands:Group"..text)
 if neww then
 text = neww or text
 end
