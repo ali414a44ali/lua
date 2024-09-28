@@ -30,165 +30,184 @@ function time_to_sec(time)
     return hour*3600 + min*60 + sec
 end
 if text == "تعطيل اليوتيوب" or text == "تعطيل يوتيوب" then
-if not msg.Manger then
-send(msg.chat_id,msg.id,'\n*• هذا الامر يخص  '..Controller_Num(6)..' * ',"md",true)  
-return false 
+if not msg.Addictive then
+return send(msg_chat_id,msg_id,'\n⇜ هذا الامر يخص ( '..Controller_Num(7)..' ) ',"md",true)  
 end
-Redis:set(Fast.."yt:lock"..msg.chat_id,true)
-send(msg.chat_id,msg.id,'\n• تم تعطيل اليوتيوب ',"md",true)  
+if Redis:get(TheMero.."youtubee"..msg.chat_id)  then
+return send(msg_chat_id,msg_id,GetByName(msg).."⇜ تم تعطيل اليوتيوب مسبقاً","md",true )
+else
+Redis:set(TheMero.."youtubee"..msg.chat_id,"true")
+return send(msg_chat_id,msg_id,GetByName(msg).."⇜ تم تعطيل اليوتيوب","md",true )
+end
 end
 if text == "تفعيل اليوتيوب" or text == "تفعيل يوتيوب" then
-if not msg.Manger then
-send(msg.chat_id,msg.id,'\n*• هذا الامر يخص  '..Controller_Num(6)..' * ',"md",true)  
-return false 
+if not msg.Addictive then
+return send(msg_chat_id,msg_id,'\n⇜ هذا الامر يخص ( '..Controller_Num(7)..' ) ',"md",true)  
 end
-Redis:del(Fast.."yt:lock"..msg.chat_id)
-send(msg.chat_id,msg.id,'\n• تم تفعيل اليوتيوب ',"md",true)  
+if not Redis:get(TheMero.."youtubee"..msg.chat_id)  then
+return send(msg_chat_id,msg_id,GetByName(msg).."⇜ تم تفعيل اليوتيوب مسبقاً","md",true )
+else
+Redis:del(TheMero.."youtubee"..msg.chat_id)
+return send(msg_chat_id,msg_id,GetByName(msg).."⇜ تم تفعيل اليوتيوب","md",true )
+end
+end
+if text == "تعطيل التحميل" or text == "تعطيل تحميل" or text == "تعطيل السوشل" or text == "تعطيل سوشل" then
+if not msg.Addictive then
+return send(msg_chat_id,msg_id,'\n⇜ هذا الامر يخص ( '..Controller_Num(7)..' ) ',"md",true)  
+end
+if Redis:get(TheMero.."soshle"..msg.chat_id)  then
+return send(msg_chat_id,msg_id,GetByName(msg).."⇜ تم "..text.." مسبقاً","md",true )
+else
+Redis:set(TheMero.."soshle"..msg.chat_id,"true")
+return send(msg_chat_id,msg_id,GetByName(msg).."⇜ تم "..text.." ","md",true )
+end
+end
+if text == "تفعيل التحميل" or text == "تفعيل تحميل" or text == "تفعيل السوشل" or text == "تفعيل سوشل" then
+if not msg.Addictive then
+return send(msg_chat_id,msg_id,'\n⇜ هذا الامر يخص ( '..Controller_Num(7)..' ) ',"md",true)  
+end
+if not Redis:get(TheMero.."soshle"..msg.chat_id)  then
+return send(msg_chat_id,msg_id,GetByName(msg).."⇜ تم "..text.." مسبقاً","md",true )
+else
+Redis:del(TheMero.."soshle"..msg.chat_id)
+return send(msg_chat_id,msg_id,GetByName(msg).."⇜ تم "..text.." ","md",true )
+end
+end
+if text == "اليوتيوب للمميزين" or text == "يوتيوب للمميزين" or text == "التحميل للمميزين" or text == "السوشل للمميزين" or text == "سوشل للمميزين" then
+if not msg.TheBasicsQ then
+return send(msg_chat_id,msg_id,'\n⇜ هذا الامر يخص المالك ',"md",true) 
+end
+Redis:set(TheMero.."sochal"..msg.chat_id,"true")
+return send(msg.chat_id,msg.id,"⇜ تم تعيين "..text.." ومافوق ","md",true)
+end
+if text == "اليوتيوب للاعضاء" or text == "يوتيوب للاعضاء" or text == "التحميل للاعضاء" or text == "السوشل للاعضاء" or text == "سوشل للاعضاء" then
+if not msg.TheBasicsQ then
+return send(msg_chat_id,msg_id,'\n⇜ هذا الامر يخص المالك ',"md",true)
+end
+Redis:del(TheMero.."sochal"..msg.chat_id)
+return send(msg.chat_id,msg.id,"⇜ تم تعيين السوشل لجميع الاعضاء ","md",true)
+end
+if text and text:match("^فيس (.*)$") or text and text:match("^(.*) فيس$") then
+local facelink = text:match("^فيس (.*)$") or text:match("^(.*) فيس$")
+if Redis:get(TheMero.."soshle"..msg.chat_id) then
+return false
+end
+if not msg.Distinguished and Redis:get(TheMero.."sochal"..msg.chat_id) then
+return send(msg.chat_id,msg.id,"⇜ عذراً عزيزي الفيسبوك للمميزين ومافوق فقط","md",true)
+end
+local nameuser = bot.getUser(msg.sender_id.user_id)
+if nameuser.first_name then
+nameuser = "["..nameuser.first_name.."](tg://user?id="..nameuser.id..")"
+else
+nameuser = 'لا يوجد اسم'
+end
+os.execute("yt-dlp "..facelink.." --max-filesize 50M -o 'face.mkv'")
+local facefile = io.open("./face.mkv","r")
+if facefile then
+bot.sendVideo(msg_chat_id,msg_id,'./face.mkv',"- من قبل : "..nameuser.."️","md")
+sleep(1)
+os.remove("face.mkv")
+else
+return send(msg_chat_id,msg_id,'\n⇜ لا استطيع تحميل اكثر من 50 ميغا',"md",true)
+end
 end
 
-if text then
-if text:match("^بحث (.*)$") then
-if Redis:get(Fast.."yt:lock"..msg.chat_id) then
-send(msg.chat_id,msg.id,'*• اليوتيوب معطل*',"md",true)  
-return false 
+if text and text:match("^تيك (.*)$") or text and text:match("^(.*) تيك$") then
+local tiklink = text:match("^تيك (.*)$") or text:match("^(.*) تيك$")
+if Redis:get(TheMero.."soshle"..msg.chat_id) then
+return false
 end
-local search = text:match("^بحث (.*)$")
-local j = json:decode(http.request("https://anubis.fun/api/yt.php?q="..URL.escape(search)..""))
-local datar = {data = {{text = "قناه السورس" , url = 'http://t.me/'..chsource..''}}}
-for i = 1,6 do
-link = j.results[i].id
-title = j.results[i].title
-title = title:gsub("/","-") 
-title = title:gsub("\n","-") 
-title = title:gsub("|","-") 
-title = title:gsub("'","-") 
-title = title:gsub('"',"-") 
-datar[i] = {{text = title , data =msg.sender_id.user_id.."dl/"..link}}
+if not msg.Distinguished and Redis:get(TheMero.."sochal"..msg.chat_id) then
+return send(msg.chat_id,msg.id,"⇜ عذراً عزيزي التيك توك للمميزين ومافوق فقط","md",true)
+end
+local nameuser = bot.getUser(msg.sender_id.user_id)
+if nameuser.first_name then
+nameuser = "["..nameuser.first_name.."](tg://user?id="..nameuser.id..")"
+else
+nameuser = 'لا يوجد اسم'
+end
+os.execute("yt-dlp "..tiklink.." --max-filesize 50M -o 'tik.mp4'")
+local tikfile = io.open("./tik.mp4","r")
+if tikfile then
+bot.sendVideo(msg_chat_id,msg_id,'./tik.mp4',"- من قبل : "..nameuser.."️","md") 
+sleep(1)
+os.remove("tik.mp4")
+else
+return send(msg_chat_id,msg_id,'\n⇜ لا استطيع تحميل اكثر من 50 ميغا',"md",true)
+end
+end
+
+if text and text:match("^رابط ساوند (.*)$") then
+local soundlink = text:match("^رابط ساوند (.*)$")
+if Redis:get(TheMero.."soshle"..msg.chat_id) then
+return false
+end
+if not msg.Distinguished and Redis:get(TheMero.."sochal"..msg.chat_id) then
+return send(msg.chat_id,msg.id,"⇜ عذراً عزيزي الساوند للمميزين ومافوق فقط","md",true)
+end
+local nameuser = bot.getUser(msg.sender_id.user_id)
+if nameuser.first_name then
+nameuser = "["..nameuser.first_name.."](tg://user?id="..nameuser.id..")"
+else
+nameuser = 'لا يوجد اسم'
+end
+os.execute("yt-dlp "..soundlink.." --max-filesize 25M -o 'soundc.mp3'")
+local soufile = io.open("./soundc.mp3","r")
+if soufile then
+bot.sendAudio(msg_chat_id,msg_id,'./soundc.mp3',"- من قبل : "..nameuser.."️","md",nil,"soundc")
+sleep(1)
+os.remove("soundc.mp3")
+else
+return send(msg_chat_id,msg_id,'\n⇜ لا استطيع تحميل اكثر من 25 ميغا',"md",true)
+end
+end
+if text and text:match("^ساوند (.*)$") or text and text:match("^(.*) [Ss]$") then
+local search = text:match("^ساوند (.*)$") or text:match("^(.*) [Ss]$")
+if Redis:get(TheMero.."soshle"..msg.chat_id) then
+return false
+end
+if not msg.Distinguished and Redis:get(TheMero.."sochal"..msg.chat_id) then
+return send(msg.chat_id,msg.id,"⇜ عذراً عزيزي الساوند للمميزين ومافوق فقط","md",true)
+end
+local jsonson = JSON.decode(request("https://anubis.fun/api/sound_search.php?q="..URL.escape(search)..""))
+Redis:del(TheMero.."soundidche"..msg.chat_id..msg.sender_id.user_id)
+Redis:set(TheMero.."soundidche"..msg.chat_id..msg.sender_id.user_id,search)
+local datar = {data = {{text = "Louis", url = 'https://t.me/Y88F8'}}}
+for i = 1,5 do
+titlee = jsonson.result[''..i..''].title
+link = jsonson.result[''..i..''].url
+link = tostring(link)
+link = link:gsub("https://soundcloud.com/",'') 
+datar[i] = {{text = titlee , data = search..":socl:"..link}}
 end
 local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = datar
 }
-send(msg.chat_id,msg.id,'• نتائج بحثك ل *'..search..'*',"md",false, false, false, false, reply_markup)
+bot.sendText(msg.chat_id,msg.id,' نتائج بحثك على الساوند ل ( *'..search..'* )',"md",false, false, false, false, reply_markup)
 end
+if text and text:match("^بحث (.*)$") then
+local search = text:match("^بحث (.*)$")
+if Redis:get(TheMero.."youtubee"..msg.chat_id) then
+return false
 end
-
-if Redis:get(Fast.."youtube"..msg.sender_id.user_id..msg_chat_id) == "mp3" then
-Redis:del(Fast.."youtube"..msg.sender_id.user_id..msg_chat_id)
-local rep = msg.id/2097152/0.5
-local m = json:decode(https.request("https://api.telegram.org/bot"..Token.."/sendAnimation?chat_id="..msg_chat_id.."&animation=https://t.me/youtube7odabot/7951&reply_to_message_id="..rep)).result.message_id
-local se = https.request("https://anubis.fun/api/yt.php?q="..URL.escape(text))
-local j = json:decode(se)
-local link = "http://youtu.be/"..j.results[1].id
-local title = j.results[1].title
-local title = title:gsub("]","")
-local title = title:gsub("[[]","")
-local title = title:gsub("/","-") 
-local title = title:gsub("\n","-") 
-local title = title:gsub("|","-") 
-local title = title:gsub("'","-") 
-local title = title:gsub('"',"-") 
-local d = j.results[1].time
-local d = tostring(d)
-if d:match("(%d+):(%d+):(%d+)") then
-tti = d
-elseif d:match("(%d+):(%d+)") then
-tti = "00:"..d
+if not msg.Distinguished and Redis:get(TheMero.."sochal"..msg.chat_id) then
+return send(msg.chat_id,msg.id,"⇜ عذراً عزيزي اليوتيوب للمميزين ومافوق فقط","md",true)
 end
-local dur = time_to_sec(tti)
-local p = j.results[1].ch
-local thumb = j.results[1].image
-local rand = math.random(0,10000)
-download(thumb,rand..'.png')
-local p = p:gsub("/","-") 
-local p = p:gsub("\n","-") 
-local p = p:gsub("|","-") 
-local p = p:gsub("'","-") 
-local p = p:gsub('"',"-") 
-os.execute("yt-dlp "..link.." -f 251 -o '"..title..".mp3'")
-bot.sendAudio(msg_chat_id,msg_id,'./'..title..'.mp3',"["..title.."]("..link..")","md",tostring(dur),title,p,"./"..rand..".png") 
-https.request("https://api.telegram.org/bot"..Token.."/deleteMessage?chat_id="..msg_chat_id.."&message_id="..m)
-Redis:del(Fast.."youtube"..msg.sender_id.user_id..msg_chat_id)
-sleep(2)
-os.remove(""..title..".mp3")
-os.remove(rand..".png")
-end
-if Redis:get(Fast.."youtube"..msg.sender_id.user_id..msg_chat_id) == "mp4" then
-local rep = msg.id/2097152/0.5
-local m = json:decode(https.request("https://api.telegram.org/bot"..Token.."/sendAnimation?chat_id="..msg_chat_id.."&animation=https://t.me/youtube7odabot/7951&reply_to_message_id="..rep)).result.message_id
-local se = https.request("https://anubis.fun/api/yt.php?q="..URL.escape(text))
-local j = json:decode(se)
-local link = "http://youtu.be/"..j.results[1].id
-local title = j.results[1].title
-local title = title:gsub("]","")
-local title = title:gsub("[[]","")
-local title = title:gsub("/","-") 
-local title = title:gsub("\n","-") 
-local title = title:gsub("|","-") 
-local title = title:gsub("'","-") 
-local title = title:gsub('"',"-") 
-local d = j.results[1].time
-local d = tostring(d)
-if d:match("(%d+):(%d+):(%d+)") then
-tti = d
-elseif d:match("(%d+):(%d+)") then
-tti = "00:"..d
-end
-local dur = time_to_sec(tti)
-local p = j.results[1].ch
-local p = p:gsub("/","-") 
-local p = p:gsub("\n","-") 
-local p = p:gsub("|","-") 
-local p = p:gsub("'","-") 
-local p = p:gsub('"',"-") 
-os.execute("yt-dlp "..link.." -f 18 -o '"..title..".mp4'")
-bot.sendVideo(msg_chat_id,msg_id,'./'..title..'.mp4',"["..title.."]("..link..")","md") 
-https.request("https://api.telegram.org/bot"..Token.."/deleteMessage?chat_id="..msg_chat_id.."&message_id="..m)
-Redis:del(Fast.."youtube"..msg.sender_id.user_id..msg_chat_id)
-sleep(2)
-os.remove(""..title..".mp4")
-end
-if text == "يوتيوب" then
-if Redis:get(Fast.."yt:lock"..msg.chat_id) then
-send(msg.chat_id,msg.id,'*• اليوتيوب معطل*',"md",true)  
-return false 
+local jsonyou = JSON.decode(request("https://youtube-scrape.herokuapp.com/api/search?q="..URL.escape(search)..""))
+Redis:del(TheMero.."youtidche"..msg.chat_id..msg.sender_id.user_id)
+Redis:set(TheMero.."youtidche"..msg.chat_id..msg.sender_id.user_id,search)
+local datar = {data = {{text = "Louis", url = 'https://t.me/Y88F8'}}}
+for i = 1,5 do
+titlee = jsonyou.results[i].video.title
+link = jsonyou.results[i].video.url
+link = tostring(link)
+link = link:gsub("https://youtu.be/",'') 
+datar[i] = {{text = titlee , data = search..":yout:"..link}}
 end
 local reply_markup = bot.replyMarkup{
 type = 'inline',
-data = {
-{
-{text = 'تحميل صوت', data = senderr..'/mp3'..msg_id}, {text = 'تحميل فيديو', data = senderr..'/mp4'..msg_id}, 
-},
+data = datar
 }
-}
-return send(msg_chat_id,msg_id, [[*
-• اختر كيف تريد التحميل
-*]],"md",false, false, false, false, reply_markup)
+bot.sendText(msg.chat_id,msg.id,' نتائج بحثك على اليوتيوب ل ( *'..search..'* )',"md",false, false, false, false, reply_markup)
 end
-
-if text and Redis:get(Fast.."toar"..msg.sender_id.user_id) then
-Redis:del(Fast.."toar"..msg.sender_id.user_id)
-local json = json:decode(https.request("https://ayad-12.xyz/7oda.php?from=auto&to=ar&text="..text)).result
-send(msg_chat_id,msg_id,json,"html",true)
-end
-if text and Redis:get(Fast.."toen"..msg.sender_id.user_id) then
-Redis:del(Fast.."toen"..msg.sender_id.user_id)
-local json = json:decode(https.request("https://ayad-12.xyz/7oda.php?from=auto&to=en&text="..text)).result
-send(msg_chat_id,msg_id,json,"html",true)
-end
-if text == 'ترجمه' or text == 'ترجمة' or text == 'ترجم' or text == 'translat' then 
-local reply_markup = bot.replyMarkup{
-type = 'inline',
-data = {
-{{text = 'ترجمه الي العربية', data = msg.sender_id.user_id..'toar'},{text = 'ترجمه الي الانجليزية', data = msg.sender_id.user_id..'toen'}},
-{{text = ' ✦ • 𝐒𝐎𝐔𝐑𝐂𝐄 𝐂𝐀𝐄𝐒𝐀𝐑 ✦', url = "https://t.me/H_8HC"}},
-}
-}
-return send(msg_chat_id,msg_id, [[*
-• Hey Send Text translate
-• ارسل النص لترجمته
-*]],"md",false, false, false, false, reply_markup)
-end
-
-end
-return {Fast = youtube}
