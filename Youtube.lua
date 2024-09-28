@@ -33,10 +33,10 @@ if text == "تعطيل اليوتيوب" or text == "تعطيل يوتيوب" th
 if not msg.Addictive then
 return send(msg_chat_id,msg_id,'\n⇜ هذا الامر يخص ( '..Controller_Num(7)..' ) ',"md",true)  
 end
-if Redis:get(TheMero.."youtubee"..msg.chat_id)  then
+if Redis:get(Zelzal.."youtubee"..msg.chat_id)  then
 return send(msg_chat_id,msg_id,GetByName(msg).."⇜ تم تعطيل اليوتيوب مسبقاً","md",true )
 else
-Redis:set(TheMero.."youtubee"..msg.chat_id,"true")
+Redis:set(Zelzal.."youtubee"..msg.chat_id,"true")
 return send(msg_chat_id,msg_id,GetByName(msg).."⇜ تم تعطيل اليوتيوب","md",true )
 end
 end
@@ -44,7 +44,7 @@ if text == "تفعيل اليوتيوب" or text == "تفعيل يوتيوب" th
 if not msg.Addictive then
 return send(msg_chat_id,msg_id,'\n⇜ هذا الامر يخص ( '..Controller_Num(7)..' ) ',"md",true)  
 end
-if not Redis:get(TheMero.."youtubee"..msg.chat_id)  then
+if not Redis:get(Zelzal.."youtubee"..msg.chat_id)  then
 return send(msg_chat_id,msg_id,GetByName(msg).."⇜ تم تفعيل اليوتيوب مسبقاً","md",true )
 else
 Redis:del(TheMero.."youtubee"..msg.chat_id)
@@ -55,10 +55,10 @@ if text == "تعطيل التحميل" or text == "تعطيل تحميل" or tex
 if not msg.Addictive then
 return send(msg_chat_id,msg_id,'\n⇜ هذا الامر يخص ( '..Controller_Num(7)..' ) ',"md",true)  
 end
-if Redis:get(TheMero.."soshle"..msg.chat_id)  then
+if Redis:get(Zelzal.."soshle"..msg.chat_id)  then
 return send(msg_chat_id,msg_id,GetByName(msg).."⇜ تم "..text.." مسبقاً","md",true )
 else
-Redis:set(TheMero.."soshle"..msg.chat_id,"true")
+Redis:set(Zelzal.."soshle"..msg.chat_id,"true")
 return send(msg_chat_id,msg_id,GetByName(msg).."⇜ تم "..text.." ","md",true )
 end
 end
@@ -66,10 +66,10 @@ if text == "تفعيل التحميل" or text == "تفعيل تحميل" or tex
 if not msg.Addictive then
 return send(msg_chat_id,msg_id,'\n⇜ هذا الامر يخص ( '..Controller_Num(7)..' ) ',"md",true)  
 end
-if not Redis:get(TheMero.."soshle"..msg.chat_id)  then
+if not Redis:get(Zelzal.."soshle"..msg.chat_id)  then
 return send(msg_chat_id,msg_id,GetByName(msg).."⇜ تم "..text.." مسبقاً","md",true )
 else
-Redis:del(TheMero.."soshle"..msg.chat_id)
+Redis:del(Zelzal.."soshle"..msg.chat_id)
 return send(msg_chat_id,msg_id,GetByName(msg).."⇜ تم "..text.." ","md",true )
 end
 end
@@ -77,7 +77,7 @@ if text == "اليوتيوب للمميزين" or text == "يوتيوب للمم
 if not msg.TheBasicsQ then
 return send(msg_chat_id,msg_id,'\n⇜ هذا الامر يخص المالك ',"md",true) 
 end
-Redis:set(TheMero.."sochal"..msg.chat_id,"true")
+Redis:set(Zelzal.."sochal"..msg.chat_id,"true")
 return send(msg.chat_id,msg.id,"⇜ تم تعيين "..text.." ومافوق ","md",true)
 end
 if text == "اليوتيوب للاعضاء" or text == "يوتيوب للاعضاء" or text == "التحميل للاعضاء" or text == "السوشل للاعضاء" or text == "سوشل للاعضاء" then
@@ -89,10 +89,10 @@ return send(msg.chat_id,msg.id,"⇜ تم تعيين السوشل لجميع ال
 end
 if text and text:match("^فيس (.*)$") or text and text:match("^(.*) فيس$") then
 local facelink = text:match("^فيس (.*)$") or text:match("^(.*) فيس$")
-if Redis:get(TheMero.."soshle"..msg.chat_id) then
+if Redis:get(Zelzal.."soshle"..msg.chat_id) then
 return false
 end
-if not msg.Distinguished and Redis:get(TheMero.."sochal"..msg.chat_id) then
+if not msg.Distinguished and Redis:get(Zelzal.."sochal"..msg.chat_id) then
 return send(msg.chat_id,msg.id,"⇜ عذراً عزيزي الفيسبوك للمميزين ومافوق فقط","md",true)
 end
 local nameuser = bot.getUser(msg.sender_id.user_id)
@@ -114,7 +114,7 @@ end
 
 if text and text:match("^تيك (.*)$") or text and text:match("^(.*) تيك$") then
 local tiklink = text:match("^تيك (.*)$") or text:match("^(.*) تيك$")
-if Redis:get(TheMero.."soshle"..msg.chat_id) then
+if Redis:get(Zelzal.."soshle"..msg.chat_id) then
 return false
 end
 if not msg.Distinguished and Redis:get(TheMero.."sochal"..msg.chat_id) then
@@ -139,10 +139,10 @@ end
 
 if text and text:match("^رابط ساوند (.*)$") then
 local soundlink = text:match("^رابط ساوند (.*)$")
-if Redis:get(TheMero.."soshle"..msg.chat_id) then
+if Redis:get(Zelzal.."soshle"..msg.chat_id) then
 return false
 end
-if not msg.Distinguished and Redis:get(TheMero.."sochal"..msg.chat_id) then
+if not msg.Distinguished and Redis:get(Zelzal.."sochal"..msg.chat_id) then
 return send(msg.chat_id,msg.id,"⇜ عذراً عزيزي الساوند للمميزين ومافوق فقط","md",true)
 end
 local nameuser = bot.getUser(msg.sender_id.user_id)
@@ -163,15 +163,15 @@ end
 end
 if text and text:match("^ساوند (.*)$") or text and text:match("^(.*) [Ss]$") then
 local search = text:match("^ساوند (.*)$") or text:match("^(.*) [Ss]$")
-if Redis:get(TheMero.."soshle"..msg.chat_id) then
+if Redis:get(Zelzal.."soshle"..msg.chat_id) then
 return false
 end
 if not msg.Distinguished and Redis:get(TheMero.."sochal"..msg.chat_id) then
 return send(msg.chat_id,msg.id,"⇜ عذراً عزيزي الساوند للمميزين ومافوق فقط","md",true)
 end
 local jsonson = JSON.decode(request("https://anubis.fun/api/sound_search.php?q="..URL.escape(search)..""))
-Redis:del(TheMero.."soundidche"..msg.chat_id..msg.sender_id.user_id)
-Redis:set(TheMero.."soundidche"..msg.chat_id..msg.sender_id.user_id,search)
+Redis:del(Zelzal.."soundidche"..msg.chat_id..msg.sender_id.user_id)
+Redis:set(Zelzal.."soundidche"..msg.chat_id..msg.sender_id.user_id,search)
 local datar = {data = {{text = "Louis", url = 'https://t.me/Y88F8'}}}
 for i = 1,5 do
 titlee = jsonson.result[''..i..''].title
@@ -188,15 +188,15 @@ bot.sendText(msg.chat_id,msg.id,' نتائج بحثك على الساوند ل (
 end
 if text and text:match("^بحث (.*)$") then
 local search = text:match("^بحث (.*)$")
-if Redis:get(TheMero.."youtubee"..msg.chat_id) then
+if Redis:get(Zelzal.."youtubee"..msg.chat_id) then
 return false
 end
-if not msg.Distinguished and Redis:get(TheMero.."sochal"..msg.chat_id) then
+if not msg.Distinguished and Redis:get(Zelzal.."sochal"..msg.chat_id) then
 return send(msg.chat_id,msg.id,"⇜ عذراً عزيزي اليوتيوب للمميزين ومافوق فقط","md",true)
 end
 local jsonyou = JSON.decode(request("https://youtube-scrape.herokuapp.com/api/search?q="..URL.escape(search)..""))
-Redis:del(TheMero.."youtidche"..msg.chat_id..msg.sender_id.user_id)
-Redis:set(TheMero.."youtidche"..msg.chat_id..msg.sender_id.user_id,search)
+Redis:del(Zelzal.."youtidche"..msg.chat_id..msg.sender_id.user_id)
+Redis:set(Zelzal.."youtidche"..msg.chat_id..msg.sender_id.user_id,search)
 local datar = {data = {{text = "Louis", url = 'https://t.me/Y88F8'}}}
 for i = 1,5 do
 titlee = jsonyou.results[i].video.title
