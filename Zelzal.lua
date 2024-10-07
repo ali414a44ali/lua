@@ -483,6 +483,12 @@ if plugin and plugin.Zelzal and msg then
 results = plugin.Zelzal(msg)
 end
 end
+function smsm(msg)
+plugin = dofile("./smsm.lua")
+if plugin and plugin.Zelzal and msg then
+results = plugin.Zelzal(msg)
+end
+end
 function to_table(index)
 return serpent.block(index , {comment=false})
 end
