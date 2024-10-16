@@ -20038,8 +20038,8 @@ end
 if text == "نداء" or text == "نادي" and (Redis:get(Zelzal..'tagallgroup'..msg.chat_id) == "open") then
 local Info_Members = bot.searchChatMembers(msg.chat_id, "*", 200)
 local List = Info_Members.members
-local Zozne = List[math.random(#List)] 
-local data = bot.getUser(Zozne.member_id.user_id)
+local Zelzal = List[math.random(#List)] 
+local data = bot.getUser(Zelzal.member_id.user_id)
 tagname = data.first_name
 tagname = tagname:gsub("]","") 
 tagname = tagname:gsub("[[]","") 
@@ -20329,7 +20329,7 @@ local Textinggt = {" ‌‏‏حـب عظيم لڪل لحظه جمـيله بي�
 "‏‏ ‏انتَ والأغاني بڪُل وڪت مَرغوبين 🤍",
 "‏‏ گد ما بوجهك ضوى شكيت بيك وگلت بالشمس متلثم", }
 local Descriptioont = Textinggt[math.random(#Textinggt)]
-Text = "\n*"..Descriptioont.."* ↤ ["..tagname.."](tg://user?id="..Zozne.member_id.user_id..")"
+Text = "\n*"..Descriptioont.."* ↤ ["..tagname.."](tg://user?id="..Zelzal.member_id.user_id..")"
 send(msg.chat_id,msg.id,""..Text.."","md",true)
 end 
 ------------------------------------ زلزال الهيبه ------------------------------------
