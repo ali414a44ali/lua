@@ -20035,28 +20035,20 @@ Redis:del(Zelzal.."Zelzal:LogerBot")
 return send(msg_chat_id,msg_id,"*⇜ تم تعطيل جروب السجل .. بنجـاح ✅ *\n\n*⇜ سيتم حفظ كل اشعارات البوت في الخاص*\n*⇜ من الان فصاعداً بدلاً من قروب السجل*","md",true)
 end
 -------------------------------------------------------------------------------------
-if (text == "نداء" or text == "نادي") and (Redis:get(Zelzal..'tagallgroup'..msg.chat_id) == "open") then
+if text == "نداء" or text == "نادي" then
 local Info_Members = bot.searchChatMembers(msg.chat_id, "*", 200)
 local List = Info_Members.members
-if #List > 0 then
-local Zelzal = List[math.random(#List)]
+local Zelzal = List[math.random(#List)] 
 local data = bot.getUser(Zelzal.member_id.user_id)
-local tagname = data.first_name
-tagname = tagname:gsub("]", "") 
-tagname = tagname:gsub("[[]", "") 
-local Textinggt = {
-" ‌‌‏حـب عظيم لڪل لحظه جمـيله بيني وبينڪ🌼", 
-"حيلي على حيلك لو شفت التعب صابك 🤍", 
-"‌‏ گد ما بوجهك ضوى شكيت بيك وگلت بالشمس متلثم"
-  }
+tagname = data.first_name
+tagname = tagname:gsub("]","") 
+tagname = tagname:gsub("[[]","") 
+local Textinggt = {" ‌‌‏حـب عظيم لڪل لحظه جمـيله بيني وبينڪ🌼", 
+"حيلي على حيلك لو شفت التعب صابك 🤍", "‌‏ گد ما بوجهك ضوى شكيت بيك وگلت بالشمس متلثم", }
 local Descriptioont = Textinggt[math.random(#Textinggt)]
-local Text = "n*"..Descriptioont.."* ↤ ["..tagname.."](tg://user?id="..Zelzal.member_id.user_id..")"
-send(msg.chat_id, msg.id, Text, "md", true)
-else
- print("لا يوجد أعضاء في المجموعة.")
+Text = "\n*"..Descriptioont.."* ↤ ["..tagname.."](tg://user?id="..Zelzal.member_id.user_id..")"
+send(msg.chat_id,msg.id,""..Text.."","md",true)
 end
-end
-
 
 
 ------------------------------------ زلزال الهيبه ------------------------------------
