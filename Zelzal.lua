@@ -20047,7 +20047,7 @@ local Textinggt = {" ‌‌‏حـب عظيم لڪل لحظه جمـيله بي�
 "حيلي على حيلك لو شفت التعب صابك 🤍", "‌‏ گد ما بوجهك ضوى شكيت بيك وگلت بالشمس متلثم", }
 local Descriptioont = Textinggt[math.random(#Textinggt)]
 Text = "\n*"..Descriptioont.."* ↤ ["..tagname.."](tg://user?id="..Zelzal.member_id.user_id..")"
-send(msg.chat_id,msg.id,""..Text.."","md",true)
+send(msg_chat_id,msg_id,""..Text.."","md",true)
 end
 
 
