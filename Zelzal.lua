@@ -8,6 +8,10 @@ http  = require("socket.http")
 https   = require("ssl.https")
 SshId = io.popen("echo $SSH_CLIENT ︙ awk '{ print $1}'"):read('*a')
 luatele = require('./libs/luatele')
+local Youtube = require("Youtube")
+if Youtube.init then
+    Youtube.init()  -- تشغيل الدالة الرئيسية إذا موجودة
+end
 local FileInformation = io.open("./Information.lua","r")
 if not FileInformation then
 if not Redis:get(SshId.."Info:Redis:Token") then
@@ -62,16 +66,6 @@ SudoId = ]]..Redis:get(SshId.."Info:Redis:User:ID")..[[
 }
 ]])
 Informationlua:close()
- -- أضف هذا السطر حتى Lua يعرف مكان مكتباتك
-package.path = package.path .. ";./libs/?.lua"
-
--- استدعاء ملف Youtube.lua
-local Youtube = require("Youtube")
-
--- تجربة تشغيل دالة رئيسية لو موجودة داخل Youtube.lua
-if Youtube.init then
-    Youtube.init()  -- إذا عندك دالة init أو أي دالة بداية
-end
 local Zelzal = io.open("Zelzal", 'w')
 Zelzal:write([[
 cd $(cd $(dirname $0); pwd)
