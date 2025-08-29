@@ -62,6 +62,16 @@ SudoId = ]]..Redis:get(SshId.."Info:Redis:User:ID")..[[
 }
 ]])
 Informationlua:close()
+ -- أضف هذا السطر حتى Lua يعرف مكان مكتباتك
+package.path = package.path .. ";./libs/?.lua"
+
+-- استدعاء ملف Youtube.lua
+local Youtube = require("Youtube")
+
+-- تجربة تشغيل دالة رئيسية لو موجودة داخل Youtube.lua
+if Youtube.init then
+    Youtube.init()  -- إذا عندك دالة init أو أي دالة بداية
+end
 local Zelzal = io.open("Zelzal", 'w')
 Zelzal:write([[
 cd $(cd $(dirname $0); pwd)
