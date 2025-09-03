@@ -487,6 +487,12 @@ if plugin and plugin.Zelzal and msg then
 results = plugin.Zelzal(msg)
 end
 end
+function tagsPlugin(msg)
+plugin = dofile("./tags.lua")
+if plugin and plugin.Zelzal and msg then
+results = plugin.Zelzal(msg)
+end
+end
 function smsm(msg)
 plugin = dofile("./smsm.lua")
 if plugin and plugin.Zelzal and msg then
