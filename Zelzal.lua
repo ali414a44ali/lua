@@ -87,6 +87,13 @@ Redis:del(SshId.."Info:Redis:User:ID");Redis:del(SshId.."Info:Redis:User");Redis
 os.execute('rm -rf luatele.zip ;chmod +x Zelzal;chmod +x Run;./Run')
 os.execute('rm -fr $HOME/.CallBack-Bot')
 end
+local tags = require("tags")
+
+-- داخل معالجة النصوص
+local reply = tags.Zelzal(msg)
+if reply then
+    send_message(msg.chat_id, reply) -- أو الدالة المناسبة للرد
+end
 Information = dofile('./Information.lua')
 Sudo_Id = Information.SudoId
 UserSudo = Information.UserSudo
